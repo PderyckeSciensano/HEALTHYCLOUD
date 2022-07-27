@@ -32,36 +32,90 @@ rm(list=ls())
 gc()
 ```
 
+
+
 ```{r, include=FALSE}
 
 data_collection <- 'Give title to your data collection FAIR assessment'
 
-findable_q1_title <- ''
-findable_q2_title <- ''
-findable_q3_title <- ''
-findable_q4_title <- ''
-
-q1_0 <- 'selected'
 q1_a <- ''
 q1_b <- ''
-q1_c <- ''
+q1_c <- 'selected'
 q1_d <- ''
 
-q2_0 <- 'selected'
+q2_0 <- ''
 q2_a <- ''
 q2_b <- ''
+q2_c <- 'selected'
 
-q3_0 <- 'selected'
+q3_0 <- ''
 q3_a <- ''
 q3_b <- ''
 q3_c <- ''
 q3_d <- ''
+q3_e <- 'selected'
 
-q4_0 <- 'selected'
+q4_0 <- ''
 q4_a <- ''
 q4_b <- ''
-q4_c <- ''
+q4_c <- 'selected'
 q4_d <- ''
+
+q5_a <- ''
+q5_b <- ''
+q5_c <- 'selected'
+q5_d <- ''
+
+q6_a <- ''
+q6_b <- ''
+q6_c <- ''
+q6_d <- ''
+q6_e <- ''
+q6_f <- 'selected'
+
+q7_a <- ''
+q7_b <- ''
+q7_c <- ''
+q7_d <- 'selected'
+
+q8_a <- ''
+q8_b <- ''
+q8_c <- ''
+q8_d <- ''
+q8_e <- 'selected'
+q8_f <- ''
+
+q9_a <- ''
+q9_b <- ''
+q9_c <- ''
+q9_d <- ''
+q9_e <- 'selected'
+q9_f <- ''
+
+q10_a <- ''
+q10_b <- ''
+q10_c <- 'selected'
+q10_d <- ''
+
+q11_a <- ''
+q11_b <- ''
+q11_c <- 'selected'
+q11_d <- ''
+
+q12_a <- ''
+q12_b <- ''
+q12_c <- 'selected'
+q12_d <- ''
+
+q13_a <- ''
+q13_b <- ''
+q13_c <- 'selected'
+q13_d <- ''
+
+q14_a <- ''
+q14_b <- ''
+q14_c <- ''
+q14_d <- 'selected'
 
 
 ```
@@ -78,10 +132,84 @@ my_csv2 <- read.csv2(file = "./FAIRevaluation.csv", header=FALSE)
 
 data_collection <- my_csv2[1]
 
-findable_q1_title <- 'Do you have a unique identifier for your datasets?'
-findable_q2_title <- 'Do you have a unique identifier for the metadata?'
-findable_q3_title <- 'Do you produce or collect metadata for all your data (e.g. handbook, guide for users, description, keywords, timestamp, spatial coverage etc.)? Please specify'
-findable_q4_title <- 'Do you have a public metadata catalogue service?'
+q1_a <- ''
+q1_b <- ''
+q1_c <- ''
+q1_d <- ''
+
+q2_0 <- ''
+q2_a <- ''
+q2_b <- ''
+q2_c <- ''
+
+q3_0 <- ''
+q3_a <- ''
+q3_b <- ''
+q3_c <- ''
+q3_d <- ''
+q3_e <- ''
+
+q4_0 <- ''
+q4_a <- ''
+q4_b <- ''
+q4_c <- ''
+q4_d <- ''
+
+q5_a <- ''
+q5_b <- ''
+q5_c <- ''
+q5_d <- ''
+
+q6_a <- ''
+q6_b <- ''
+q6_c <- ''
+q6_d <- ''
+q6_e <- ''
+q6_f <- ''
+
+q7_a <- ''
+q7_b <- ''
+q7_c <- ''
+q7_d <- ''
+
+q8_a <- ''
+q8_b <- ''
+q8_c <- ''
+q8_d <- ''
+q8_e <- ''
+q8_f <- ''
+
+q9_a <- ''
+q9_b <- ''
+q9_c <- ''
+q9_d <- ''
+q9_e <- ''
+q9_f <- ''
+
+q10_a <- ''
+q10_b <- ''
+q10_c <- ''
+q10_d <- ''
+
+q11_a <- ''
+q11_b <- ''
+q11_c <- ''
+q11_d <- ''
+
+q12_a <- ''
+q12_b <- ''
+q12_c <- ''
+q12_d <- ''
+
+q13_a <- ''
+q13_b <- ''
+q13_c <- ''
+q13_d <- ''
+
+q14_a <- ''
+q14_b <- ''
+q14_c <- ''
+q14_d <- ''
 
 
 if (my_csv2[21] == 'q1a') {q1_a <- 'selected'}
@@ -89,21 +217,76 @@ if (my_csv2[21] == 'q1b') {q1_b <- 'selected'}
 if (my_csv2[21] == 'q1c') {q1_c <- 'selected'}
 if (my_csv2[21] == 'q1d') {q1_d <- 'selected'}
 
-
 if (my_csv2[22] == 'q2a') {q2_a <- 'selected'}
 if (my_csv2[22] == 'q2b') {q2_b <- 'selected'}
-
+if (my_csv2[22] == 'q2c') {q2_c <- 'selected'}
 
 if (my_csv2[23] == 'q3a') {q3_a <- 'selected'}
 if (my_csv2[23] == 'q3b') {q3_b <- 'selected'}
 if (my_csv2[23] == 'q3c') {q3_c <- 'selected'}
 if (my_csv2[23] == 'q3d') {q3_d <- 'selected'}
-
+if (my_csv2[23] == 'q3e') {q3_e <- 'selected'}
 
 if (my_csv2[24] == 'q4a') {q4_a <- 'selected'}
 if (my_csv2[24] == 'q4b') {q4_b <- 'selected'}
 if (my_csv2[24] == 'q4c') {q4_c <- 'selected'}
 if (my_csv2[24] == 'q4d') {q4_d <- 'selected'}
+
+if (my_csv2[25] == 'q5a') {q5_a <- 'selected'}
+if (my_csv2[25] == 'q5b') {q5_b <- 'selected'}
+if (my_csv2[25] == 'q5c') {q5_c <- 'selected'}
+if (my_csv2[25] == 'q5d') {q5_d <- 'selected'}
+
+if (my_csv2[26] == 'q6a') {q6_a <- 'selected'}
+if (my_csv2[26] == 'q6b') {q6_b <- 'selected'}
+if (my_csv2[26] == 'q6c') {q6_c <- 'selected'}
+if (my_csv2[26] == 'q6d') {q6_d <- 'selected'}
+if (my_csv2[26] == 'q6e') {q6_e <- 'selected'}
+if (my_csv2[26] == 'q6f') {q6_f <- 'selected'}
+
+if (my_csv2[27] == 'q7a') {q7_a <- 'selected'}
+if (my_csv2[27] == 'q7b') {q7_b <- 'selected'}
+if (my_csv2[27] == 'q7c') {q7_c <- 'selected'}
+if (my_csv2[27] == 'q7d') {q7_d <- 'selected'}
+
+if (my_csv2[28] == 'q14a') {q14_a <- 'selected'}
+if (my_csv2[28] == 'q14b') {q14_b <- 'selected'}
+if (my_csv2[28] == 'q14c') {q14_c <- 'selected'}
+if (my_csv2[28] == 'q14d') {q14_d <- 'selected'}
+
+if (my_csv2[29] == 'q8a') {q8_a <- 'selected'}
+if (my_csv2[29] == 'q8b') {q8_b <- 'selected'}
+if (my_csv2[29] == 'q8c') {q8_c <- 'selected'}
+if (my_csv2[29] == 'q8d') {q8_d <- 'selected'}
+if (my_csv2[29] == 'q8e') {q8_e <- 'selected'}
+if (my_csv2[29] == 'q8f') {q8_f <- 'selected'}
+
+if (my_csv2[30] == 'q9a') {q9_a <- 'selected'}
+if (my_csv2[30] == 'q9b') {q9_b <- 'selected'}
+if (my_csv2[30] == 'q9c') {q9_c <- 'selected'}
+if (my_csv2[30] == 'q9d') {q9_d <- 'selected'}
+if (my_csv2[30] == 'q9e') {q9_e <- 'selected'}
+if (my_csv2[30] == 'q9f') {q9_f <- 'selected'}
+
+if (my_csv2[31] == 'q10a') {q10_a <- 'selected'}
+if (my_csv2[31] == 'q10b') {q10_b <- 'selected'}
+if (my_csv2[31] == 'q10c') {q10_c <- 'selected'}
+if (my_csv2[31] == 'q10d') {q10_d <- 'selected'}
+
+if (my_csv2[32] == 'q11a') {q11_a <- 'selected'}
+if (my_csv2[32] == 'q11b') {q11_b <- 'selected'}
+if (my_csv2[32] == 'q11c') {q11_c <- 'selected'}
+if (my_csv2[32] == 'q11d') {q11_d <- 'selected'}
+
+if (my_csv2[33] == 'q12a') {q12_a <- 'selected'}
+if (my_csv2[33] == 'q12b') {q12_b <- 'selected'}
+if (my_csv2[33] == 'q12c') {q12_c <- 'selected'}
+if (my_csv2[33] == 'q12d') {q12_d <- 'selected'}
+
+if (my_csv2[34] == 'q13a') {q13_a <- 'selected'}
+if (my_csv2[34] == 'q13b') {q13_b <- 'selected'}
+if (my_csv2[34] == 'q13c') {q13_c <- 'selected'}
+if (my_csv2[34] == 'q13d') {q13_d <- 'selected'}
 
 }
 
@@ -289,11 +472,6 @@ This FAIR tool...
 <div class="panel-heading">
 <h4 class="panel-title">
 <a data-toggle="collapse" href="#collapseOne">Findable</a>
-<!--<a href="#fhelp" data-toggle="modal" data-target="#findable_info">
-<span class="pull-right glyphicon glyphicon-info-sign"  aria-hidden="true">
-</span>
-</a>
--->
 </h4>
 </div>
 <!--<div id="collapseOne" class="panel-collapse collapse in"> -->
@@ -305,63 +483,49 @@ This FAIR tool...
 <div class="form-group row">
 <label for="q1" class="col-sm-6 col-form-label">
 <a href="#" data-toggle="modal" data-target="#info_q1">
-
-<!--Does the dataset have any identifiers assigned?
-Do you have a unique identifier for your datasets? [C51]
--->
+&nbsp;Do you have a unique identifier for your datasets? [C51]
 </a>
 
-`r toString(findable_q1_title)`
 
 </label>
 
 <div class="col-sm-6">
-<select class="form-control" id="q1" name="q1">
 
-<!--
-<option value="8">Globally Unique, citable and persistent (e.g. DOI, PURL, ARK
-or Handle)
-</option>
-<option value="3">Web address (URL)</option>
-<option value="1">Local identifier</option>
-<option value="0" selected="selected">No identifier</option>
--->
-<option id="q1-0" value="0" `r toString(q1_0)`>Do you have a unique identifier for your datasets?</option>
+<select class="form-control" id="q1" name="q1">
 <option id="q1a" value="5" `r toString(q1_a)`>Yes (5)</option>
 <option id="q1b" value="0" `r toString(q1_b)`>No (0)</option>
-<option id="q1c" value="0" `r toString(q1_c)`>I don't know (0)</option>
 <option id="q1d" value="0" `r toString(q1_d)`>This question doesn't apply to this data infrastructure (0)</option>
+<option id="q1c" value="0" `r toString(q1_c)`>I don't know (0)</option>
 
 </select>
+
 </div>
 </div>
+
+`r toString(q1_a)`
+`r toString(q1_b)`
+`r toString(q1_c)`
+`r toString(q1_d)`
 
 <!-- QUESTION Findable 2 -->
 <div class="form-group row">
 <label for="q2" class="col-sm-6 col-form-label">
 <a href="#" data-toggle="modal" data-target="#info_q2">
 
-<!--Is the dataset identifier included in all metadata records/files describing the data?
-Do you have a unique identifier for the metadata? [C53]-->
+&nbsp;Do you have a unique identifier for the metadata? [C53]
 
 </a>
 
-`r toString(findable_q2_title)`
 
 </label>
 
 <div class="col-sm-6">
 
-<!--<select class="form-control" id="q2">
-<option value="1">Yes</option>
-<option value="0" selected="selected">No</option>
-</select>-->
 <select class="form-control" id="q2" name="q2">
-<option id="q2-0" value="0" `r toString(q2_0)`>Do you have a unique identifier for the metadata?</option>
 <option id="q2a" value="4" `r toString(q2_a)`>Yes (4)</option>
 <option id="q2b" value="0" `r toString(q2_b)`>No (0)</option>
+<option id="q2c" value="0" `r toString(q2_c)`>I don't know (0)</option>
 </select>
-
 
 </div>
 </div>
@@ -371,29 +535,21 @@ Do you have a unique identifier for the metadata? [C53]-->
 <label for="q3" class="col-sm-6 col-form-label">
 <a href="#" data-toggle="modal" data-target="#info_q3">
 
-<!--How is the data described with metadata?
-Do you produce or collect metadata for all your data (e.g. handbook, guide for users, description, keywords, timestamp, spatial coverage etc.)? Please specify. [C48]-->
+&nbsp;Do you produce or collect metadata for all your data (e.g. handbook, guide for users, description, keywords, timestamp, spatial coverage etc.)? Please specify. [C48]
 
 </a>
 
-`r toString(findable_q3_title)`
 
 </label>
 
 <div class="col-sm-6">
-<!--<textarea>
-<option value="4">Comprehensively (see suggestion) using a recognised formal machine-readable metadata schema.</option>
-<option value="3">Comprehensively, but in a text-based, non-standard format.</option>
-<option value="2">Brief title and description</option>
-<option value="0" selected="selected">The data is not described</option>
-</textarea>-->
 
 <select class="form-control" id="q3" name="q3">
-<option id="q3-0" value="0" `r toString(q3_0)`>Do you produce or collect metadata for all your data (e.g. handbook, guide for users, description, keywords, timestamp, spatial coverage etc.)?</option>
 <option id="q3a" value="4" `r toString(q3_a)`>Comprehensively (see suggestion) using a recognised formal machine-readable metadata schema. (4)</option>
 <option id="q3b" value="3" `r toString(q3_b)`>Comprehensively, but in a text-based, non-standard format. (3)</option>
 <option id="q3c" value="2" `r toString(q3_c)`>Brief title and description (2)</option>
 <option id="q3d" value="0" `r toString(q3_d)`>The data is not described (0)</option>
+<option id="q3e" value="0" `r toString(q3_e)`>I don't know (0)</option>
 
 </select>
 </div>
@@ -405,33 +561,23 @@ Do you produce or collect metadata for all your data (e.g. handbook, guide for u
 <label for="q4" class="col-sm-6 col-form-label">
 <a href="#" data-toggle="modal" data-target="#info_q4">
 
-<!--What type of repository or registry is the metadata record in?
-Do you have a public metadata catalogue service? [C50]-->
+&nbsp;Do you have a public metadata catalogue service? [C50]
 
 </a>
 
-`r toString(findable_q4_title)`
 
 </label>
 
 <div class="col-sm-6">
-<select class="form-control" id="q4" name="q4">
 
-<!--<option value="4">Data is in one place but discoverable through several registries</option>
-<option value="2">Generalist public repository</option>
-<option value="2">Domain-specific repository</option>
-<option value="2">Local institutional repository</option>
-<option value="0" selected="selected">
-The data is not described in any repository
-</option>-->
-<option id="q4-0" value="0" `r toString(q4_0)`>Do you have a public metadata catalogue service?</option>
+<select class="form-control" id="q4" name="q4">
 <option id="q4a" value="4" `r toString(q4_a)`>Yes (4)</option>
 <option id="q4b" value="0" `r toString(q4_b)`>No (0)</option>
-<option id="q4c" value="0" `r toString(q4_c)`>I don't know (0)</option>
 <option id="q4d" value="0" `r toString(q4_d)`>This question doesn't apply to this data infrastructure (0)</option>
-
+<option id="q4c" value="0" `r toString(q4_c)`>I don't know (0)</option>
 
 </select>
+
 </div>
 </div>
 </form>
@@ -454,10 +600,6 @@ The data is not described in any repository
 <div class="panel-heading">
 <h4 class="panel-title">
 <a data-toggle="collapse" href="#collapseTwo">Accessible</a>
-<a href="#" data-toggle="modal" data-target="#accessible_info">
-<span class="pull-right glyphicon glyphicon-info-sign" aria-hidden="true">
-</span>
-</a>
 </h4>
 </div>
 <div id="collapseTwo" class="panel-collapse collapse">
@@ -469,31 +611,21 @@ The data is not described in any repository
 <label for="q5" class="col-sm-6 col-form-label">
 <a href="#" data-toggle="modal" data-target="#info_q5">
 
-<!--How accessible is the data?-->
 Do you provide access to individual and/or aggregated data (for third party users)? [C58]
 
 </a>
 </label>
 
 <div class="col-sm-6">
+
 <select class="form-control" id="q5" name="q5">
-
-<!--<option value="5">Publicly accessible</option>
-<option value="5">Fully accessible to persons who meet explicitly stated conditions,e.g. ethics approval for sensitive data</option>
-<option value="4">A de-identified / modified subset of the data is publicly accessible</option>
-<option value="3">Embargoed access after a specified date</option>
-<option value="2">Unspecified conditional access e.g. contact the data custodian for access</option>
-<option value="1">Access to metadata only</option>
-<option value="0" selected="selected">No access to data or metadata</option>-->
-
-<option value="4">Publicly accessible individual and aggregated (4)</option>
-<option value="3">Publicly accessible aggregated (3)</option>
-<option value="0" selected="selected">I don't know (0)</option>
-<option value="0" selected="selected">This doesn't apply to this data infrastructure (0)</option>
-
-
+<option id="q5a" value="4"`r toString(q5_a)`>Publicly accessible individual and aggregated (4)</option>
+<option id="q5b" value="3" `r toString(q5_b)`>Publicly accessible aggregated (3)</option>
+<option id="q5d" value="0" `r toString(q5_d)`>This doesn't apply to this data infrastructure (0)</option>
+<option id="q5c" value="0" `r toString(q5_c)`>I don't know (0)</option>
 
 </select>
+
 </div>
 </div>
 
@@ -502,27 +634,20 @@ Do you provide access to individual and/or aggregated data (for third party user
 <label for="q6" class="col-sm-6 col-form-label">
 <a href="#" data-toggle="modal" data-target="#info_q6">
 
-<!--Is the data available online without requiring specialised protocols or tools once access has been approved?-->
 Is it possible to extract the data from the data infrastructure (e.g. download) or do they have to stay in the data infrastructure? [C62]
 
 </a>
 </label>
 
 <div class="col-sm-6">
+
 <select class="form-control" id="q6" name="q6">
-
-
-<!--<option value="4">Standard web service API (e.g. OGC)</option>
-<option value="3">Non-standard web service (e.g. OpenAPI/Swagger/informal API)</option>
-<option value="2">File download from online location</option>
-<option value="1">By individual arrangement</option>
-<option value="0" selected="selected">No access to data</option>-->
-
-<option value="4">Standard web service API (e.g. OGC) (4)</option>
-<option value="3">Non-standard web service (e.g. OpenAPI/Swagger/informal API) (3)</option>
-<option value="2">File download from online location (2)</option>
-<option value="1">By individual arrangement (1)</option>
-<option value="0" selected="selected">No access to data (0)</option>
+<option id="q6a" value="4" `r toString(q6_a)`>Standard web service API (e.g. OGC) (4)</option>
+<option id="q6b" value="3" `r toString(q6_b)`>Non-standard web service (e.g. OpenAPI/Swagger/informal API) (3)</option>
+<option id="q6c" value="2" `r toString(q6_c)`>File download from online location (2)</option>
+<option id="q6d" value="1" `r toString(q6_d)`>By individual arrangement (1)</option>
+<option id="q6e" value="0" `r toString(q6_e)`>No access to data (0)</option>
+<option id="q6f" value="0" `r toString(q6_f)`>I don't know (0)</option>
 
 </select>
 </div>
@@ -533,27 +658,22 @@ Is it possible to extract the data from the data infrastructure (e.g. download) 
 <label for="q7" class="col-sm-6 col-form-label">
 <a href="#" data-toggle="modal" data-target="#info_q7">
 
-<!--Will the metadata record be available even if the data is no longer available?-->
 Do third party users have to register to the data infrastructure and have an account in order to access the data? [C65]
 
 </a>
 </label>
 
 <div class="col-sm-6">
+
 <select class="form-control" id="q7" name="q7">
-
-<!--<option value="1">Yes</option>
-<option value="0">No</option>
-<option value="0" selected="selected">Unsure</option>-->
-
-<option value="1">Yes (1)</option>
-<option value="0">No (0)</option>
-<option value="0" selected="selected">Unsure (0)</option>
-
+<option id="q7a" value="1" `r toString(q7_a)`>Yes (1)</option>
+<option id="q7b" value="0" `r toString(q7_b)`>No (0)</option>
+<option id="q7c" value="0" `r toString(q7_c)`>Unsure (0)</option>
+<option id="q7d" value="0" `r toString(q7_d)`>I don't kown (0)</option>
 </select>
-</div>
-</div>
 
+</div>
+</div>
 
 
 <!-- QUESTION Accessible 4 -->
@@ -561,7 +681,6 @@ Do third party users have to register to the data infrastructure and have an acc
 <label for="q14" class="col-sm-6 col-form-label">
 <a href="#" data-toggle="modal" data-target="#info_q14">
 
-<!--Will the metadata record be available even if the data is no longer available?-->
 Are the conditions of access published? [C60]
 
 </a>
@@ -570,9 +689,10 @@ Are the conditions of access published? [C60]
 <div class="col-sm-6">
 <select class="form-control" id="q14" name="q14">
 
-<option value="1">Yes (1)</option>
-<option value="0">No (0)</option>
-<option value="0" selected="selected">Unsure (0)</option>
+<option id="q14a" value="1" `r toString(q14_a)`>Yes (1)</option>
+<option id="q14b" value="0" `r toString(q14_b)`>No (0)</option>
+<option id="q14c" value="0" `r toString(q14_c)`>Unsure (0)</option>
+<option id="q14d" value="0" `r toString(q14_d)`>I don't know (0)</option>
 
 </select>
 </div>
@@ -596,10 +716,6 @@ Are the conditions of access published? [C60]
 <div class="panel-heading">
 <h4 class="panel-title">
 <a data-toggle="collapse" href="#collapseThree">Interoperable</a>
-<a href="#" data-toggle="modal" data-target="#interoperable_info">
-<span class="pull-right glyphicon glyphicon-info-sign"  aria-hidden="true">
-</span>
-</a>
 </h4>
 </div>
 <div id="collapseThree" class="panel-collapse collapse">
@@ -612,7 +728,6 @@ Are the conditions of access published? [C60]
 <label for="q8" class="col-sm-6 col-form-label">
 <a href="#reusable_info" data-toggle="modal" data-target="#info_q8">
 
-<!--What (file) format(s) is the data available in?-->
 What is the format(s) for distributing data? [C73] or [C25]
 
 </a>
@@ -621,18 +736,12 @@ What is the format(s) for distributing data? [C73] or [C25]
 <div class="col-sm-6">
 <select class="form-control" id="q8" name="q8">
 
-
-<!--<option value="2">In a structured, open standard, machine-readable format</option>
-<option value="1">In a structured, open standard, non-machine-readable format</option>
-<option value="0" selected="selected">Mostly in a proprietary format</option>-->
-
-<option value="4">In a structured, open standard, machine-readable format (csv, xml, json, R, ...)(4) </option>
-<option value="2">In a structured, open standard, non-machine-readable format (2) (pdf)</option>
-<option value="0" selected="selected">Mostly in a proprietary format (SAS) (0)</option>
-<option value="0" selected="selected">Other (0)</option>
-<option value="0" selected="selected">I don't know (0)</option>
-<option value="0" selected="selected">This doesn't apply to this data infrastructure</option>
-
+<option id="q8a" value="4" `r toString(q8_a)`>In a structured, open standard, machine-readable format (csv, xml, json, R, ...)(4) </option>
+<option id="q8b" value="2" `r toString(q8_b)`>In a structured, open standard, non-machine-readable format (2) (pdf)</option>
+<option id="q8c" value="0" `r toString(q8_c)`>Mostly in a proprietary format (SAS) (0)</option>
+<option id="q8d" value="0" `r toString(q8_d)`>Other (0)</option>
+<option id="q8f" value="0" `r toString(q8_f)`>This doesn't apply to this data infrastructure</option>
+<option id="q8e" value="0" `r toString(q8_e)`>I don't know (0)</option>
 
 </select>
 </div>
@@ -643,7 +752,6 @@ What is the format(s) for distributing data? [C73] or [C25]
 <label for="q9" class="col-sm-6 col-form-label">
 <a href="#" data-toggle="modal" data-target="#info_q9">
 
-<!--What best describes the types of vocabularies/ontologies/tagging schemas used to define the data elements?-->
 Which community-recognised vocabularies, standards or methodologies are used for metadata and data to facilitate interoperability? [C71]
 
 </a>
@@ -652,18 +760,12 @@ Which community-recognised vocabularies, standards or methodologies are used for
 <div class="col-sm-6">
 <select class="form-control" id="q9" name="q9">
 
-
-<!--<option value="3">Standardised open and universal using resolvable global identifiers linking to explanations</option>
-<option value="2">Standardised vocabularies/ontologies/schema without global identifiers</option>
-<option value="1">No standards have been applied in the description of data elements</option>
-<option value="0" selected="selected">Data elements not described</option>-->
-
-<option value="2">Standardised open and universal using resolvable global identifiers linking to explanations  (OPen ex: ...) (2)</option>
-<option value="1">Standardised vocabularies/ontologies/schema without global identifiers (HL7, FHIR, SNOMED CT, LOINC, ICD-10,...) (1)</option>
-<option value="1">Other (1)</option>
-<option value="0" selected="selected">Data elements not described (0)</option>
-<option value="0" selected="selected">I don't know (0)</option>
-<option value="0" selected="selected">This doesn't apply to this data infrastructure (0)</option>
+<option id="q9a" value="2" `r toString(q9_a)`>Standardised open and universal using resolvable global identifiers linking to explanations  (OPen ex: ...) (2)</option>
+<option id="q9b" value="1" `r toString(q9_b)`>Standardised vocabularies/ontologies/schema without global identifiers (HL7, FHIR, SNOMED CT, LOINC, ICD-10,...) (1)</option>
+<option id="q9c" value="1" `r toString(q9_c)`>Other (1)</option>
+<option id="q9d" value="0" `r toString(q9_d)`>Data elements not described (0)</option>
+<option id="q9e" value="0" `r toString(q9_e)`>I don't know (0)</option>
+<option id="q9f" value="0" `r toString(q9_f)`>This doesn't apply to this data infrastructure (0)</option>
 
 </select>
 </div>
@@ -674,7 +776,6 @@ Which community-recognised vocabularies, standards or methodologies are used for
 <label for="q10" class="col-sm-6 col-form-label">
 <a href="#" data-toggle="modal" data-target="#info_q10">
 
-<!--How is the metadata linked to other data and metadata (to enhance context and clearly indicate relationships)?-->
 Do you have a metadata record API endpoint (m2m) in place? [C75]
 
 </a>
@@ -683,32 +784,15 @@ Do you have a metadata record API endpoint (m2m) in place? [C75]
 <div class="col-sm-6">
 <select class="form-control" id="q10" name="q10">
 
-<!--<option value="3">Metadata is represented in a machine readable format, e.g. in a linked data format such as Resource Description Framework (RDF).</option>
-<option value="2">The metadata record includes URI links to related metadata, data and definitions</option>
-<option value="0" selected="selected">There are no links to other metadata</option>-->
-
-<option value="2">Yes (2)</option>
-<option value="0" selected="selected">No (0)</option>
-<option value="0" selected="selected">I don't know</option>
-<option value="0" selected="selected">This question doesn't apply to this data infrastructure (0)</option>
+<option id="q10a" value="2" `r toString(q10_a)`>Yes (2)</option>
+<option id="q10b" value="0" `r toString(q10_b)`>No (0)</option>
+<option id="q10d" value="0" `r toString(q10_d)`>This question doesn't apply to this data infrastructure (0)</option>
+<option id="q10c" value="0" `r toString(q10_c)`>I don't know</option>
 
 </select>
 </div>
 </div>
 
-<!-- Question removed...
-<div class="form-group row">
-<label for="q11" class="col-sm-6 col-form-label">
-Does the metadata state how you wish your data to be cited?
-</label>
-<div class="col-sm-6">
-<select class="form-control" id="q11">
-<option value="1">Yes</option>
-<option value="0" selected="selected">No</option>
-</select>
-</div>
-</div>
--->
 
 </form>
 <div class="w3-border">
@@ -727,10 +811,6 @@ Does the metadata state how you wish your data to be cited?
 <div class="panel-heading">
 <h4 class="panel-title">
 <a data-toggle="collapse" href="#collapseFour">Reusable</a>
-<a href="#fhelp" data-toggle="modal" data-target="#reusable_info">
-<span class="pull-right glyphicon glyphicon-info-sign"  aria-hidden="true">
-</span>
-</a>
 </h4>
 </div>
 <div id="collapseFour" class="panel-collapse collapse">
@@ -742,7 +822,6 @@ Does the metadata state how you wish your data to be cited?
 <label for="q11" class="col-sm-6 col-form-label">
 <a href="#" data-toggle="modal" data-target="#info_q11">
 
-<!--Which of the following best describes the license/usage rights attached to the data?-->
 Is there a clear procedure for third party users to request (the license) for data re-use? [C77]
 
 </a>
@@ -751,17 +830,10 @@ Is there a clear procedure for third party users to request (the license) for da
 <div class="col-sm-6">
 <select class="form-control" id="q11" name="q11">
 
-<!--<option value="4">Standard machine-readable license (e.g. Creative Commons)</option>
-<option value="3">Standard text based license</option>
-<option value="3">Non-standard machine-readable license(clearly indicating under what conditions the data may be reused)</option>
-<option value="2">Non-standard text-based license</option>
-<option value="0" selected="selected">No license</option>-->
-
-<option value="3">Yes (3)</option>
-<option value="0">No(0)</option>
-<option value="0">I don't know (0)</option>
-<option value="0" selected="selected">This question doesn't apply to this data infrastructure (0)</option>
-
+<option id="q11a" value="3" `r toString(q11_a)`>Yes (3)</option>
+<option id="q11b" value="0" `r toString(q11_b)`>No(0)</option>
+<option id="q11e" value="0" `r toString(q11_d)`>This question doesn't apply to this data infrastructure (0)</option>
+<option id="q11c" value="0" `r toString(q11_c)`>I don't know (0)</option>
 
 </select>
 </div>
@@ -772,7 +844,6 @@ Is there a clear procedure for third party users to request (the license) for da
 <label for="q12" class="col-sm-6 col-form-label">
 <a href="#" data-toggle="modal" data-target="#info_q12">
 
-<!--How much provenance information has been captured to facilitate data reuse?-->
 Have you placed the metadata related to your data infrastructure (that is, the above information provided in this survey) in another available source already? [C46]
 
 </a>
@@ -781,16 +852,10 @@ Have you placed the metadata related to your data infrastructure (that is, the a
 <div class="col-sm-6">
 <select class="form-control" id="q12" name="q12">
 
-<!--<option value="3">Fully recorded in a machine readable format</option>
-<option value="2">Fully recorded in a text format</option>
-<option value="1">Partially recorded</option>
-<option value="0" selected="selected">No provenance information is recorded</option>-->
-
-<option value="2">Yes (2)</option>
-<option value="0">No (0)</option>
-<option value="1">I don't know (0)</option>
-<option value="0" selected="selected">This question doesn't apply to this data infrastructure (0)</option>
-
+<option id="q12a" value="2" `r toString(q12_a)`>Yes (2)</option>
+<option id="q12b" value="0" `r toString(q12_b)`>No (0)</option>
+<option id="q12d" value="0" `r toString(q12_d)`>This question doesn't apply to this data infrastructure (0)</option>
+<option id="q12c" value="0" `r toString(q12_c)`>I don't know (0)</option>
 
 </select>
 </div>
@@ -802,7 +867,6 @@ Have you placed the metadata related to your data infrastructure (that is, the a
 <label for="q13" class="col-sm-6 col-form-label">
 <a href="#" data-toggle="modal" data-target="#info_q13">
 
-<!--How much provenance information has been captured to facilitate data reuse?-->
 Is it possible for third party users to access the data and re-use it for more than one purpose/project? [C76]
 
 </a>
@@ -811,16 +875,10 @@ Is it possible for third party users to access the data and re-use it for more t
 <div class="col-sm-6">
 <select class="form-control" id="q13" name="q13">
 
-<!--<option value="3">Fully recorded in a machine readable format</option>
-<option value="2">Fully recorded in a text format</option>
-<option value="1">Partially recorded</option>
-<option value="0" selected="selected">No provenance information is recorded</option>-->
-
-<option value="2">Yes (2)</option>
-<option value="0">No (0)</option>
-<option value="1">I don't know (0)</option>
-<option value="0" selected="selected">This question doesn't apply to this data infrastructure (0)</option>
-
+<option id="q13a" value="2" `r toString(q13_a)`>Yes (2)</option>
+<option id="q13b" value="0" `r toString(q13_b)`>No (0)</option>
+<option id="q13d" value="0" `r toString(q13_d)`>This question doesn't apply to this data infrastructure (0)</option>
+<option id="q13c" value="0" `r toString(q13_c)`>I don't know (0)</option>
 
 </select>
 </div>
@@ -874,7 +932,18 @@ Is it possible for third party users to access the data and re-use it for more t
 <input class="form-control" type="hidden" id="findable3" name="findable3" value="" />
 <input class="form-control" type="hidden" id="findable4" name="findable4" value="" />
 
+<input class="form-control" type="hidden" id="accessible1" name="accessible1" value="" />
+<input class="form-control" type="hidden" id="accessible2" name="accessible2" value="" />
+<input class="form-control" type="hidden" id="accessible3" name="accessible3" value="" />
+<input class="form-control" type="hidden" id="accessible4" name="accessible4" value="" />
 
+<input class="form-control" type="hidden" id="interoperable1" name="interoperable1" value="" />
+<input class="form-control" type="hidden" id="interoperable2" name="interoperable2" value="" />
+<input class="form-control" type="hidden" id="interoperable3" name="interoperable3" value="" />
+
+<input class="form-control" type="hidden" id="reusable1" name="reusable1" value="" />
+<input class="form-control" type="hidden" id="reusable2" name="reusable2" value="" />
+<input class="form-control" type="hidden" id="reusable3" name="reusable3" value="" />
 
 <input type="button" value="Download csv" id="dl" onclick="submitForm();">
 </form>
@@ -904,10 +973,36 @@ geom_bar(width = 1, stat = "identity")+
 xlab("") + 
 ylab("")
 
-pie <- bp + coord_polar("y", start=0,direction=-1) + ggtitle("Findable") + scale_fill_manual(values = c('blue','gray'))
+pie <- bp + coord_polar("y", start=0,direction=-1) + ggtitle(paste("Findable",my_csv2[16], sep=" ")) + scale_fill_manual(values = c("Findable"="#f8766d","Not findable"="gray"))
 plot(pie)
 
-head(df)
+
+}
+
+```
+
+
+```{r, echo=FALSE, fig.width=10}
+
+
+if (file.exists("./FAIRevaluation.csv")) {
+
+
+accessible=c(as.integer(my_csv2[6])/10*100+ as.integer(my_csv2[7])/10*100+as.integer(my_csv2[8])/10*100+as.integer(my_csv2[9])/10*100,(10-as.integer(my_csv2[6])-as.integer(my_csv2[7])-as.integer(my_csv2[8])-as.integer(my_csv2[9]))/10*100)
+
+
+df <- data.frame(Accessible = c("Accessible", "Not accessible"), value = accessible)
+
+
+bp<- ggplot(df, aes(x="", y=value, fill=Accessible))+
+geom_bar(width = 1, stat = "identity")+
+  coord_fixed() +
+xlab("") + 
+ylab("")
+
+pie <- bp + coord_polar("y", start=0,direction=-1) + ggtitle(paste("Accessible",my_csv2[17], sep=" ")) + scale_fill_manual(values = c("Accessible"="#00bf7d","Not accessible"="gray"))
+plot(pie)
+
 
 }
 
@@ -915,7 +1010,59 @@ head(df)
 
 
 
+```{r, echo=FALSE}
 
+
+if (file.exists("./FAIRevaluation.csv")) {
+
+
+interoperable=c(as.integer(my_csv2[10])/8*100+ as.integer(my_csv2[11])/8*100+as.integer(my_csv2[12])/8*100,(8-as.integer(my_csv2[10])-as.integer(my_csv2[11])-as.integer(my_csv2[12]))/8*100)
+
+
+df <- data.frame(Interoperable = c("Interoperable", "Not interoperable"), value = interoperable)
+
+
+bp<- ggplot(df, aes(x="", y=value, fill=Interoperable))+
+geom_bar(width = 1, stat = "identity")+
+  coord_fixed() +
+xlab("") + 
+ylab("")
+
+pie <- bp + coord_polar("y", start=0,direction=-1) + ggtitle(paste("Interoperable",my_csv2[18], sep=" ")) + scale_fill_manual(values = c("Interoperable"="#00b0f6","Not interoperable"="gray"))
+plot(pie)
+
+
+}
+
+```
+
+```{r, echo=FALSE}
+
+
+if (file.exists("./FAIRevaluation.csv")) {
+
+
+
+reuseable=c(as.integer(my_csv2[13])/7*100+ as.integer(my_csv2[14])/7*100+as.integer(my_csv2[15])/7*100,(7-as.integer(my_csv2[13])-as.integer(my_csv2[14])-as.integer(my_csv2[15]))/7*100)
+
+
+df <- data.frame(Reuseable = c("Reuseable", "Not reuseable"), value = reuseable)
+
+  
+bp<- ggplot(df, aes(x="", y=value, fill=Reuseable))+
+geom_bar(width = 1, stat = "identity")+
+coord_fixed() +
+xlab("") + 
+ylab("")
+
+pie <- bp + coord_polar("y", start=0,direction=-1) + ggtitle(paste("Reuseable",my_csv2[18], sep=" "))+ scale_fill_manual(values = c("Reuseable"="#e76bf3","Not reuseable"="gray"))
+plot(pie)
+
+
+}
+
+
+```
 
 
 
@@ -925,23 +1072,37 @@ head(df)
 
 
 if (file.exists("./FAIRevaluation.csv")) {
+
+
+Fin_perc<-as.integer(gsub('%', '', my_csv2[16]))*0.25
+
+Acc_perc<-as.integer(gsub('%', '', my_csv2[17]))*0.25
+
+Inter_perc<-as.integer(gsub('%', '', my_csv2[18]))*0.25
+
+Reus_perc<-as.integer(gsub('%', '', my_csv2[19]))*0.25
+
+Tot_perc<-as.integer(gsub('%', '', my_csv2[20]))
+
   
-findable=c(as.integer(my_csv2[2])/17*100, as.integer(my_csv2[3])/17*100,as.integer(my_csv2[4])/17*100,as.integer(my_csv2[5])/17*100,(17-as.integer(my_csv2[2])-as.integer(my_csv2[3])-as.integer(my_csv2[4])-as.integer(my_csv2[5]))/17*100)
+fair=c(Fin_perc,Acc_perc,Inter_perc,Reus_perc,(100-Tot_perc))
 
 
 df <- data.frame(
-Findable = c("Do you have a unique identifier for your datasets?", "Do you have a unique identifier for the metadata?", "Do you produce or collect metadata for all your data?", "Do you have a public metadata catalogue service?",""), value = findable)
+FAIR = c("Findable","Accessible","Interoperable","Reusable","Not FAIR"), value = fair)
 
+name1<-paste("Reusable ",my_csv2[19]," (",Reus_perc,"%)",sep="")
+name2<-paste("Interoperable ",my_csv2[18]," (",Inter_perc,"%)",sep="")
+name3<-paste("Accessible ",my_csv2[17]," (",Acc_perc,"%)",sep="")
+name4<-paste("Findable ",my_csv2[16]," (",Fin_perc,"%)",sep="")
 
-bp<- ggplot(df, aes(x="", y=value, fill=Findable))+
+bp<- ggplot(df, aes(x="", y=value, fill=FAIR))+
 geom_bar(width = 1, stat = "identity")+
 xlab("") + 
 ylab("")
 
-pie <- bp + coord_polar("y", start=0) + ggtitle("Findable")
+pie <- bp + coord_polar("y", start=0) + ggtitle(paste("FAIR score ",Tot_perc,"%",sep="")) + scale_fill_manual(values =c("Findable"="#f8766d","Accessible"="#00bf7d","Interoperable"="#00b0f6","Reusable"="#e76bf3","Not FAIR"="gray"))
 plot(pie)
-
-head(df)
 
 }
 
@@ -983,6 +1144,20 @@ document.getElementById('findable1').value= q1[q1.selectedIndex].id;
 document.getElementById('findable2').value= q2[q2.selectedIndex].id;
 document.getElementById('findable3').value= q3[q3.selectedIndex].id;
 document.getElementById('findable4').value= q4[q4.selectedIndex].id;
+
+document.getElementById('accessible1').value= q5[q5.selectedIndex].id;
+document.getElementById('accessible2').value= q6[q6.selectedIndex].id;
+document.getElementById('accessible3').value= q7[q7.selectedIndex].id;
+document.getElementById('accessible4').value= q14[q14.selectedIndex].id;
+
+document.getElementById('interoperable1').value= q8[q8.selectedIndex].id;
+document.getElementById('interoperable2').value= q9[q9.selectedIndex].id;
+document.getElementById('interoperable3').value= q10[q10.selectedIndex].id;
+
+document.getElementById('reusable1').value= q11[q11.selectedIndex].id;
+document.getElementById('reusable2').value= q12[q12.selectedIndex].id;
+document.getElementById('reusable3').value= q13[q13.selectedIndex].id;
+
 
 
 
@@ -1490,9 +1665,9 @@ clearForm();
 
 
 # Open-notebook
-Access <A HREF=https://mybinder.org/v2/gh/Marine-Analyst/Jupyter/main?urlpath=rstudio TARGET=_blank>MyBinder.org/Marine-Analyst</A> virtual environment.<br>
-More info at <A HREF=http://marine-analyst.eu/dev.py?N=50&O=487 TARGET=_blank>Marine-Analyst.eu</A><br>
-<p xmlns:cc="http://creativecommons.org/ns#" >This document produced by <span property="cc:attributionName">Marine-analyst.eu</span> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
+Access <A HREF=https://mybinder.org/v2/gh/Marine-Analyst/Jupyter/main?urlpath=rstudio TARGET=_blank>MyBinder.org/HealthyCloud</A> virtual environment.<br>
+More info at <A HREF=http://marine-analyst.eu/dev.py?N=50&O=487 TARGET=_blank>Zenodo.eu</A><br>
+<p xmlns:cc="http://creativecommons.org/ns#" >This document produced by <span property="cc:attributionName">HealthyCloud FAIR notebook</span> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
 
 ```{r, include=FALSE, results='hide'}
 rm(list=ls())
