@@ -18,7 +18,7 @@ Step by step guide for users in myBinder/Rstudio:
 8. Upload and share the FAIRness "FAIR_TOOL.html" report.
 
 
-RStudio: [![Binder](http://mybinder.org/badge_logo.svg)](https://ovh.mybinder.org/v2/gh/PderyckeSciensano/HEALHTYCLOUD/main?urlpath=rstudio)
+RStudio: [![Binder](http://mybinder.org/badge_logo.svg)](https://ovh.mybinder.org/v2/gh/PderyckeSciensano/HEALTHYCLOUD/main?urlpath=rstudio)
 
 
 
