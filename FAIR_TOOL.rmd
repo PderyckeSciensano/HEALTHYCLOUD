@@ -36,6 +36,7 @@ gc()
 
 ```{r, include=FALSE}
 
+#Check if the 
 csv_location <- "./FAIRevaluation.csv"
 
 data_collection <- 'Give a title to your data collection FAIR assessment'
@@ -677,7 +678,7 @@ return html;
 <select class="form-control" id="q7" name="q7">
 <option id="q7a" value="1" `r toString(q7_a)`>Yes (1)</option>
 <option id="q7b" value="0" `r toString(q7_b)`>No (0)</option>
-<option id="q7c" value="0" `r toString(q7_c)`>Unsure (0)</option>
+<option id="q7c" value="0" `r toString(q7_c)`>No access to data (0)</option>
 <option id="q7d" value="0" `r toString(q7_d)`>I don't know (0)</option>
 </select>
 
@@ -699,7 +700,7 @@ return html;
 
 <option id="q14a" value="1" `r toString(q14_a)`>Yes (1)</option>
 <option id="q14b" value="0" `r toString(q14_b)`>No (0)</option>
-<option id="q14c" value="0" `r toString(q14_c)`>Unsure (0)</option>
+<option id="q14c" value="0" `r toString(q14_c)`>No access to data (0)</option>
 <option id="q14d" value="0" `r toString(q14_d)`>I don't know (0)</option>
 
 </select>
@@ -746,7 +747,7 @@ return html;
 <option id="q8b" value="2" `r toString(q8_b)`>In a structured, open standard, non-machine-readable format (2) (pdf)</option>
 <option id="q8c" value="0" `r toString(q8_c)`>Mostly in a proprietary format (SAS) (0)</option>
 <option id="q8d" value="0" `r toString(q8_d)`>Other (0)</option>
-<option id="q8f" value="0" `r toString(q8_f)`>This doesn't apply to this data infrastructure</option>
+<option id="q8f" value="0" `r toString(q8_f)`>This doesn't apply to this data infrastructure (0)</option>
 <option id="q8e" value="0" `r toString(q8_e)`>I don't know (0)</option>
 
 </select>
@@ -791,7 +792,7 @@ return html;
 <option id="q10a" value="2" `r toString(q10_a)`>Yes (2)</option>
 <option id="q10b" value="0" `r toString(q10_b)`>No (0)</option>
 <option id="q10d" value="0" `r toString(q10_d)`>This question doesn't apply to this data infrastructure (0)</option>
-<option id="q10c" value="0" `r toString(q10_c)`>I don't know</option>
+<option id="q10c" value="0" `r toString(q10_c)`>I don't know (0)</option>
 
 </select>
 </div>
@@ -1681,8 +1682,8 @@ clearForm();
 <BR><BR>
 
 # Open-notebook
-Access <A HREF=https://mybinder.org/v2/gh/Marine-Analyst/Jupyter/main?urlpath=rstudio TARGET=_blank>MyBinder.org/HealthyCloud</A> virtual environment.<br>
-More info at <A HREF=http://marine-analyst.eu/dev.py?N=50&O=487 TARGET=_blank>Zenodo.eu</A><br>
+Access <A HREF=https://ovh.mybinder.org/v2/gh/PderyckeSciensano/HEALHTYCLOUD/main?urlpath=rstudio TARGET=_blank>MyBinder.org/HealthyCloud</A> virtual environment.<br>
+More info at <A HREF=# TARGET=_blank>Zenodo.eu</A><br>
 <p xmlns:cc="http://creativecommons.org/ns#" >This document produced by <span property="cc:attributionName">HealthyCloud FAIR notebook</span> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
 
 <BR><BR>
