@@ -483,7 +483,7 @@ return html;
 <LI>Save and share the FAIRness report as an HTML document.
 </UL>
 
-<p>[*] The tool can be downloaded on <A HREF="https://zenodo.org/" TARGET="_blank">ZENODO.org</A> (<A HREF="https://www.rstudio.com/" TARGET="_blank">R studio</A> is required) or accessed on <A HREF="https://ovh.mybinder.org/v2/gh/PderyckeSciensano/HEALHTYCLOUD/main?urlpath=rstudio" TARGET="_blank">MyBinder</A>.</p>
+<p>[*] The tool can be downloaded on <A HREF="https://zenodo.org/" TARGET="_blank">ZENODO.org</A> (<A HREF="https://www.rstudio.com/" TARGET="_blank">R studio</A> is required) or accessed on <A HREF="https://ovh.mybinder.org/v2/gh/PderyckeSciensano/HEALTHYCLOUD/main?urlpath=rstudio" TARGET="_blank">MyBinder</A>.</p>
 
 
 # FAIR survey
@@ -1682,7 +1682,7 @@ clearForm();
 <BR><BR>
 
 # Open-notebook
-Access <A HREF=https://ovh.mybinder.org/v2/gh/PderyckeSciensano/HEALHTYCLOUD/main?urlpath=rstudio TARGET=_blank>MyBinder.org/HealthyCloud</A> virtual environment.<br>
+Access <A HREF=https://ovh.mybinder.org/v2/gh/PderyckeSciensano/HEALTHYCLOUD/main?urlpath=rstudio TARGET=_blank>MyBinder.org/HealthyCloud</A> virtual environment.<br>
 More info at <A HREF=# TARGET=_blank>Zenodo.eu</A><br>
 <p xmlns:cc="http://creativecommons.org/ns#" >This document produced by <span property="cc:attributionName">HealthyCloud FAIR notebook</span> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
 
