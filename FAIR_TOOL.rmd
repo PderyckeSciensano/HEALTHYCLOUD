@@ -482,7 +482,7 @@ return html;
 <LI>Save and share the FAIRness report as an HTML document.
 </UL>
 
-<p>* The tool can be downloaded on <A HREF="https://zenodo.org/" TARGET="_blank">ZENODO.org</A> (<A HREF="https://www.rstudio.com/" TARGET="_blank">R studio</A> is required) or accessed on <A HREF="https://ovh.mybinder.org/v2/gh/PderyckeSciensano/HEALHTYCLOUD/main?urlpath=rstudio" TARGET="_blank">MyBinder</A>.</p>
+<p>[*] The tool can be downloaded on <A HREF="https://zenodo.org/" TARGET="_blank">ZENODO.org</A> (<A HREF="https://www.rstudio.com/" TARGET="_blank">R studio</A> is required) or accessed on <A HREF="https://ovh.mybinder.org/v2/gh/PderyckeSciensano/HEALHTYCLOUD/main?urlpath=rstudio" TARGET="_blank">MyBinder</A>.</p>
 
 
 # FAIR survey
