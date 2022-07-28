@@ -1,8 +1,8 @@
 
 ---
-title: "FAIR evaluation"
+title: "HEALTHYCLOUD FAIRness evaluation tool"
 author: Document produced by HealthyCloud
-date: "`r format(Sys.time(), '%d %B, %Y')`"
+date: "`r format(Sys.time())`"
 output:
   html_document:
     df_print: paged
@@ -331,8 +331,13 @@ canvas {
 .glyphicon-info-sign {font-size: 1.3em; color: #328cc7;}
 
 a:link {color: #007B9A;}
+
 a:visited {color: #007B9A;}
 a {color: #007B9A;}
+
+blockquote {
+  font-size: 1.0em;
+  margin-left: 6px;}
 
 </style>
 
@@ -481,12 +486,10 @@ This FAIR tool...
 <!-- QUESTION Findable 1 -->
 <div class="form-group row">
 <label for="q1" class="col-sm-6 col-form-label">
-<!--<a href="#" data-toggle="modal" data-target="#info_q1">-->
-<a href="#" data-toggle="modal">
+<a href="#" data-toggle="modal" data-target="#info_q1"></a>
 
 <blockquote>Do you have a unique identifier for your datasets?</blockquote>
 
-</a>
 
 
 </label>
@@ -508,12 +511,9 @@ This FAIR tool...
 <!-- QUESTION Findable 2 -->
 <div class="form-group row">
 <label for="q2" class="col-sm-6 col-form-label">
-<!--<a href="#" data-toggle="modal" data-target="#info_q2">-->
-<a href="#" data-toggle="modal">
+<a href="#" data-toggle="modal" data-target="#info_q2"></a>
 
 <blockquote>Do you have a unique identifier for the metadata?</blockquote>
-
-</a>
 
 
 </label>
@@ -532,12 +532,9 @@ This FAIR tool...
 <!-- QUESTION Findable 3 -->
 <div class="form-group row">
 <label for="q3" class="col-sm-6 col-form-label">
-<!--<a href="#" data-toggle="modal" data-target="#info_q3">-->
-<a href="#" data-toggle="modal">
+<a href="#" data-toggle="modal" data-target="#info_q3"></a>
 
 <blockquote>Do you produce or collect metadata for all your data (e.g. handbook, guide for users, description, keywords, timestamp, spatial coverage etc.)?</blockquote>
-
-</a>
 
 
 </label>
@@ -559,12 +556,9 @@ This FAIR tool...
 <!-- QUESTION Findable 4 -->
 <div class="form-group row">
 <label for="q4" class="col-sm-6 col-form-label">
-<!--<a href="#" data-toggle="modal" data-target="#info_q4">-->
-<a href="#" data-toggle="modal">
+<a href="#" data-toggle="modal" data-target="#info_q4"></a>
 
 <blockquote>Do you have a public metadata catalogue service?</blockquote>
-
-</a>
 
 
 </label>
@@ -610,12 +604,10 @@ This FAIR tool...
 <!-- QUESTION Accessible 1 -->
 <div class="form-group row">
 <label for="q5" class="col-sm-6 col-form-label">
-<!--<a href="#" data-toggle="modal" data-target="#info_q5">-->
-<a href="#">
+<a href="#" data-toggle="modal" data-target="#info_q5"></a>
 
 <blockquote>Do you provide access to individual and/or aggregated data (for third party users)?</blockquote>
 
-</a>
 </label>
 
 <div class="col-sm-6">
@@ -634,12 +626,10 @@ This FAIR tool...
 <!-- QUESTION Accessible 2 -->
 <div class="form-group row">
 <label for="q6" class="col-sm-6 col-form-label">
-<!--<a href="#" data-toggle="modal" data-target="#info_q6">-->
-<a href="#">
+<a href="#" data-toggle="modal" data-target="#info_q6"></a>
 
 <blockquote>Is it possible to extract the data from the data infrastructure (e.g. download) or do they have to stay in the data infrastructure?</blockquote>
 
-</a>
 </label>
 
 <div class="col-sm-6">
@@ -659,12 +649,10 @@ This FAIR tool...
 <!-- QUESTION Accessible 3 -->
 <div class="form-group row">
 <label for="q7" class="col-sm-6 col-form-label">
-<!--<a href="#" data-toggle="modal" data-target="#info_q7">-->
-<a href="#">
+<a href="#" data-toggle="modal" data-target="#info_q7"></a>
 
 <blockquote>Do third party users have to register to the data infrastructure and have an account in order to access the data?</blockquote>
 
-</a>
 </label>
 
 <div class="col-sm-6">
@@ -683,12 +671,10 @@ This FAIR tool...
 <!-- QUESTION Accessible 4 -->
 <div class="form-group row">
 <label for="q14" class="col-sm-6 col-form-label">
-<!--<a href="#" data-toggle="modal" data-target="#info_q14">-->
-<a href="#">
+<a href="#" data-toggle="modal" data-target="#info_q14"></a>
 
 <blockquote>Are the conditions of access published?</blockquote>
 
-</a>
 </label>
 
 <div class="col-sm-6">
@@ -730,12 +716,10 @@ This FAIR tool...
 <!-- QUESTION Interoperable 1 -->
 <div class="form-group row">
 <label for="q8" class="col-sm-6 col-form-label">
-<!--<a href="#reusable_info" data-toggle="modal" data-target="#info_q8">-->
-<a href="#">
+<a href="#reusable_info" data-toggle="modal" data-target="#info_q8"></a>
 
 <blockquote>What is the format(s) for distributing data?</blockquote>
 
-</a>
 </label>
 
 <div class="col-sm-6">
@@ -755,12 +739,10 @@ This FAIR tool...
 <!-- QUESTION Interoperable 2 -->
 <div class="form-group row">
 <label for="q9" class="col-sm-6 col-form-label">
-<!--<a href="#" data-toggle="modal" data-target="#info_q9">-->
-<a href="#">
+<a href="#" data-toggle="modal" data-target="#info_q9"></a>
 
 <blockquote>Which community-recognised vocabularies, standards or methodologies are used for metadata and data to facilitate interoperability?</blockquote>
 
-</a>
 </label>
 
 <div class="col-sm-6">
@@ -780,12 +762,10 @@ This FAIR tool...
 <!-- QUESTION Interoperable 3 -->
 <div class="form-group row">
 <label for="q10" class="col-sm-6 col-form-label">
-<!--<a href="#" data-toggle="modal" data-target="#info_q10">-->
-<a href="#">
+<a href="#" data-toggle="modal" data-target="#info_q10"></a>
 
 <blockquote>Do you have a metadata record API endpoint (m2m) in place?</blockquote>
 
-</a>
 </label>
 
 <div class="col-sm-6">
@@ -827,12 +807,10 @@ This FAIR tool...
 <!-- QUESTION Reusable 1 -->
 <div class="form-group row">
 <label for="q11" class="col-sm-6 col-form-label">
-<!--<a href="#" data-toggle="modal" data-target="#info_q11">-->
-<a href="#">
+<a href="#" data-toggle="modal" data-target="#info_q11"></a>
 
 <blockquote>Is there a clear procedure for third party users to request (the license) for data re-use?</blockquote>
 
-</a>
 </label>
 
 <div class="col-sm-6">
@@ -850,12 +828,10 @@ This FAIR tool...
 <!-- QUESTION Reusable 2 -->
 <div class="form-group row">
 <label for="q12" class="col-sm-6 col-form-label">
-<!--<a href="#" data-toggle="modal" data-target="#info_q12">-->
-<a href="#">
+<a href="#" data-toggle="modal" data-target="#info_q12"></a>
 
 <blockquote>Have you placed the metadata related to your data infrastructure (that is, the above information provided in this survey) in another available source already?</blockquote>
 
-</a>
 </label>
 
 <div class="col-sm-6">
@@ -874,12 +850,10 @@ This FAIR tool...
 <!-- QUESTION Reusable 3 -->
 <div class="form-group row">
 <label for="q13" class="col-sm-6 col-form-label">
-<!--<a href="#" data-toggle="modal" data-target="#info_q13">-->
-<a href="#">
+<a href="#" data-toggle="modal" data-target="#info_q13"></a>
 
 <blockquote>Is it possible for third party users to access the data and re-use it for more than one purpose/project?</blockquote>
 
-</a>
 </label>
 
 <div class="col-sm-6">
@@ -923,10 +897,11 @@ This FAIR tool...
 
 <!--<p> Stars <span id="tstars"></span></p>-->
 <!--<p> FAIRNESS total score <span id="tscore"></span></p>-->
-<!-- FAIRNESS score <span id="tpercentage"></span> -->
+
 
 <table width=100%>
-
+<TR><TD COLSPAN=4>FAIRNESS score <span id="tpercentage"></span></TD></TR>
+<TR><TD COLSPAN=4><hr/></TD></TR>
 <TR><TD>FINDABLE</TD><TD>ACCESSIBLE</TD><TD>INTEROPERABLE</TD><TD>REUSABLE</TD></TR>
 <TR><TD><span id="fscore"></span></TD><TD><span id="ascore"></TD><TD><span id="iscore"></TD><TD><span id="rscore"></span></TD></TR>
 <TR><TD COLSPAN=4><hr/></TD></TR>
@@ -1126,9 +1101,8 @@ FAIR_EVALUTATION
 
 }
 
-
-
 ```
+
 
 
 
@@ -1683,13 +1657,13 @@ clearForm();
 </div>
 </div>
 
-
-<BR>
+<BR><BR>
 
 # Open-notebook
 Access <A HREF=https://mybinder.org/v2/gh/Marine-Analyst/Jupyter/main?urlpath=rstudio TARGET=_blank>MyBinder.org/HealthyCloud</A> virtual environment.<br>
 More info at <A HREF=http://marine-analyst.eu/dev.py?N=50&O=487 TARGET=_blank>Zenodo.eu</A><br>
 <p xmlns:cc="http://creativecommons.org/ns#" >This document produced by <span property="cc:attributionName">HealthyCloud FAIR notebook</span> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
+
 <BR><BR>
 
 ```{r, include=FALSE, results='hide'}
