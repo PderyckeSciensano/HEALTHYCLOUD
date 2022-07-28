@@ -883,14 +883,13 @@ This FAIR tool...
 </div>
 </div>
 
-<h4>Total across F.A.I.R</h4>
+<h4>FAIRNESS score <span id="tpercentage"></span></h4>
 
 <div class="w3-border">
 <div id="tbar" class="w3-container w3-padding w3-green" style="width:0%">
 <div class="w3-center" id="tdemo"></div>
 </div>
 </div>
-<br>
 <p>
 
 <form id="form">
@@ -900,8 +899,6 @@ This FAIR tool...
 
 
 <table width=100%>
-<TR><TD COLSPAN=4>FAIRNESS score <span id="tpercentage"></span></TD></TR>
-<TR><TD COLSPAN=4><hr/></TD></TR>
 <TR><TD>FINDABLE</TD><TD>ACCESSIBLE</TD><TD>INTEROPERABLE</TD><TD>REUSABLE</TD></TR>
 <TR><TD><span id="fscore"></span></TD><TD><span id="ascore"></TD><TD><span id="iscore"></TD><TD><span id="rscore"></span></TD></TR>
 <TR><TD COLSPAN=4><hr/></TD></TR>
@@ -941,7 +938,7 @@ This FAIR tool...
 
 
 
-```{r, echo=FALSE, out.width='80%'}
+```{r, echo=FALSE, out.width='60%'}
 
 
 if (file.exists("./FAIRevaluation.csv")) {
@@ -972,7 +969,7 @@ plot(pie)
 ```
 
 
-```{r, echo=FALSE, out.width='80%'}
+```{r, echo=FALSE, out.width='60%'}
 
 
 if (file.exists("./FAIRevaluation.csv")) {
@@ -1000,7 +997,7 @@ plot(pie)
 
 
 
-```{r, echo=FALSE, out.width='80%'}
+```{r, echo=FALSE, out.width='60%'}
 
 
 if (file.exists("./FAIRevaluation.csv")) {
@@ -1026,7 +1023,7 @@ plot(pie)
 
 ```
 
-```{r, echo=FALSE, out.width='80%'}
+```{r, echo=FALSE, out.width='60%'}
 
 
 if (file.exists("./FAIRevaluation.csv")) {
@@ -1058,7 +1055,7 @@ plot(pie)
 
 
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='80%'}
 
 
 if (file.exists("./FAIRevaluation.csv")) {
