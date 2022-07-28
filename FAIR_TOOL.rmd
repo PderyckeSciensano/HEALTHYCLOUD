@@ -36,6 +36,8 @@ gc()
 
 ```{r, include=FALSE}
 
+csv_location <- "./FAIRevaluation.csv"
+
 data_collection <- 'Give title to your data collection FAIR assessment'
 
 q1_a <- ''
@@ -128,7 +130,7 @@ q14_d <- 'selected'
 
 if (file.exists("./FAIRevaluation.csv")) {
 
-my_csv2 <- read.csv2(file = "./FAIRevaluation.csv", header=FALSE)
+my_csv2 <- read.csv2(file = csv_location, header=FALSE)
 
 data_collection <- my_csv2[1]
 
@@ -297,10 +299,6 @@ if (my_csv2[34] == 'q13d') {q13_d <- 'selected'}
 # Data collection
 
 
-
-
-
-
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins)
 <script src=https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js></script>
  -->
@@ -465,10 +463,29 @@ return html;
 <form>
 <input class="form-control" id="q0"  type="text"  name="q0" value="`r toString(data_collection)`" style="font-size: 1.8em;">
 </form>
+
 <BR>
 
 
-This FAIR tool...
+<p>This FAIRness evaluation tool has been created by members of the <A HREF="https://healthycloud.eu/" TARGET="_blank">HealthyCloud consortium</A>, specifically Work Package 3 (WP3). The tool is based on the Australian Research Data Commons (ARDC) <A HREF="https://ardc.edu.au/resources/aboutdata/fair-data/fair-self-assessment-tool/" TARGET=_blank>FAIR data self-assessment tool</A>.</p>
+
+<p>This 2-in-1 tool (survey form and reporting) is designed to allow assessment of the FAIRness of health-related data infrastructures, and includes questions to assess each of the FAIR principles. These questions are based on a survey developed by members of the consortium with the aim of carrying out a landscape analysis of health-related data infrastructures.</p>
+
+<p>There is an option to select 'I don't know' under each question. However, we would encourage users to consider if there is someone else in their organisation who does know the answer to that question, to increase the accuracy of the assessment. You would need to share the FAIRness report within your organisation. At each updating step, a new csv file can be produced and used to generate an updated FAIRness report.</p>
+
+<p>Step by step guide for users:</p>
+<UL>
+<LI>Input your answers for each question in the tool
+<LI>Click 'Download' and save the csv file
+<LI>Re-run the script*, specifying the location at which the csv file has been saved
+<LI>This creates a FAIRness report, including pie charts demonstrating the percentage scores for each principle as well as an overall score.
+<LI>Save and share the FAIRness report as an HTML document.
+</UL>
+
+<p>The tool can be downloaded on <A HREF="https://zenodo.org/" TARGET="_blank">ZENODO.org</A> (<A HREF="https://www.rstudio.com/" TARGET="_blank">R studio</A> is required) or accessed on <A HREF="https://ovh.mybinder.org/v2/gh/PderyckeSciensano/HEALHTYCLOUD/main?urlpath=rstudio" TARGET="_blank">MyBinder</A>.</p>
+
+
+# FAIR survey
 
 
 <!-- Findable -->
@@ -937,6 +954,7 @@ This FAIR tool...
 
 
 
+# FAIR report
 
 ```{r, echo=FALSE, out.width='60%'}
 
