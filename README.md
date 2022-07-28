@@ -1,6 +1,6 @@
 # Open Notebook produced by [HealthyCloud.eu](https://healthycloud.eu).
 
-This FAIRness evaluation tool has been created by members of the <A HREF="https://healthycloud.eu/" TARGET="_blank">HealthyCloud consortium</A>, specifically Work Package 3 (WP3). The tool is based on the Australian Research Data Commons (ARDC) <A HREF="https://ardc.edu.au/resources/aboutdata/fair-data/fair-self-assessment-tool/" TARGET=_blank>FAIR data self-assessment tool.
+This FAIRness evaluation tool has been created by members of the HealthyCloud consortium, specifically Work Package 3 (WP3). The tool is based on the Australian Research Data Commons (ARDC) FAIR data self-assessment tool.
 
 This 2-in-1 tool (survey form and reporting) is designed to allow assessment of the FAIRness of health-related data infrastructures, and includes questions to assess each of the FAIR principles. These questions are based on a survey developed by members of the consortium with the aim of carrying out a landscape analysis of health-related data infrastructures.
 
