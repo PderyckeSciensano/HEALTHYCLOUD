@@ -36,9 +36,9 @@ gc()
 
 ```{r, include=FALSE}
 
-csv_location <- "./FAIRevaluation.csv"
+csv_location <- "./FAIRevaluationxxxxx.csv"
 
-data_collection <- 'Give title to your data collection FAIR assessment'
+data_collection <- 'Give a title to your data collection FAIR assessment'
 
 q1_a <- ''
 q1_b <- ''
@@ -128,7 +128,7 @@ q14_d <- 'selected'
 
 ```{r, include=FALSE}
 
-if (file.exists("./FAIRevaluation.csv")) {
+if (file.exists(csv_location)) {
 
 my_csv2 <- read.csv2(file = csv_location, header=FALSE)
 
@@ -956,10 +956,12 @@ return html;
 
 # FAIR report
 
+
+
 ```{r, echo=FALSE, out.width='60%'}
 
 
-if (file.exists("./FAIRevaluation.csv")) {
+if (file.exists(csv_location)) {
 
 library(dplyr)
 library(ggplot2)
@@ -982,6 +984,10 @@ pie <- bp + coord_polar("y", start=0,direction=-1) + ggtitle(paste("Findable",my
 plot(pie)
 
 
+} else {
+  
+print('Follow the step by step guide to produce the FAIR report')
+  
 }
 
 ```
@@ -990,7 +996,7 @@ plot(pie)
 ```{r, echo=FALSE, out.width='60%'}
 
 
-if (file.exists("./FAIRevaluation.csv")) {
+if (file.exists(csv_location)) {
 
 
 accessible=c(as.integer(my_csv2[6])/10*100+ as.integer(my_csv2[7])/10*100+as.integer(my_csv2[8])/10*100+as.integer(my_csv2[9])/10*100,(10-as.integer(my_csv2[6])-as.integer(my_csv2[7])-as.integer(my_csv2[8])-as.integer(my_csv2[9]))/10*100)
@@ -1018,7 +1024,7 @@ plot(pie)
 ```{r, echo=FALSE, out.width='60%'}
 
 
-if (file.exists("./FAIRevaluation.csv")) {
+if (file.exists(csv_location)) {
 
 
 interoperable=c(as.integer(my_csv2[10])/8*100+ as.integer(my_csv2[11])/8*100+as.integer(my_csv2[12])/8*100,(8-as.integer(my_csv2[10])-as.integer(my_csv2[11])-as.integer(my_csv2[12]))/8*100)
@@ -1044,7 +1050,7 @@ plot(pie)
 ```{r, echo=FALSE, out.width='60%'}
 
 
-if (file.exists("./FAIRevaluation.csv")) {
+if (file.exists(csv_location)) {
 
 
 
@@ -1076,7 +1082,7 @@ plot(pie)
 ```{r, echo=FALSE, out.width='80%'}
 
 
-if (file.exists("./FAIRevaluation.csv")) {
+if (file.exists(csv_location)) {
 
 
 Fin_perc<-as.integer(gsub('%', '', my_csv2[16]))*0.25
@@ -1110,9 +1116,9 @@ pie <- bp + coord_polar("y", start=0) + ggtitle(paste("FAIR score ",Tot_perc,"%"
 plot(pie)
 
 fair_eval=c(name4,name3,name2,name1,name0)
-FAIR_EVALUTATION <- data.frame(FAIRness_Evaluation = c("Findable","Accessible","Interoperable","Reusable","FAIRness score"), value = fair_eval)
+FAIR_EVALUATION <- data.frame(FAIRness_Evaluation = c("Findable","Accessible","Interoperable","Reusable","FAIRness score"), value = fair_eval)
 
-FAIR_EVALUTATION
+FAIR_EVALUATION
 
 }
 
