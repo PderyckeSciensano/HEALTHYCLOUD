@@ -331,7 +331,6 @@ canvas {
 .glyphicon-info-sign {font-size: 1.3em; color: #328cc7;}
 
 a:link {color: #007B9A;}
-
 a:visited {color: #007B9A;}
 a {color: #007B9A;}
 
@@ -459,7 +458,7 @@ return html;
 <div class="bs-example">
 <div class="panel-group" id="accordion">
 <form>
-<input class="form-control" id="q0"  type="text"  name="q0" value="`r toString(data_collection)`" >
+<input class="form-control" id="q0"  type="text"  name="q0" value="`r toString(data_collection)`" style="font-size: 1.8em;">
 </form>
 <BR>
 
@@ -482,8 +481,11 @@ This FAIR tool...
 <!-- QUESTION Findable 1 -->
 <div class="form-group row">
 <label for="q1" class="col-sm-6 col-form-label">
-<a href="#" data-toggle="modal" data-target="#info_q1">
-&nbsp;Do you have a unique identifier for your datasets? [C51]
+<!--<a href="#" data-toggle="modal" data-target="#info_q1">-->
+<a href="#" data-toggle="modal">
+
+<blockquote>Do you have a unique identifier for your datasets?</blockquote>
+
 </a>
 
 
@@ -502,17 +504,14 @@ This FAIR tool...
 </div>
 </div>
 
-`r toString(q1_a)`
-`r toString(q1_b)`
-`r toString(q1_c)`
-`r toString(q1_d)`
 
 <!-- QUESTION Findable 2 -->
 <div class="form-group row">
 <label for="q2" class="col-sm-6 col-form-label">
-<a href="#" data-toggle="modal" data-target="#info_q2">
+<!--<a href="#" data-toggle="modal" data-target="#info_q2">-->
+<a href="#" data-toggle="modal">
 
-&nbsp;Do you have a unique identifier for the metadata? [C53]
+<blockquote>Do you have a unique identifier for the metadata?</blockquote>
 
 </a>
 
@@ -533,9 +532,10 @@ This FAIR tool...
 <!-- QUESTION Findable 3 -->
 <div class="form-group row">
 <label for="q3" class="col-sm-6 col-form-label">
-<a href="#" data-toggle="modal" data-target="#info_q3">
+<!--<a href="#" data-toggle="modal" data-target="#info_q3">-->
+<a href="#" data-toggle="modal">
 
-&nbsp;Do you produce or collect metadata for all your data (e.g. handbook, guide for users, description, keywords, timestamp, spatial coverage etc.)? Please specify. [C48]
+<blockquote>Do you produce or collect metadata for all your data (e.g. handbook, guide for users, description, keywords, timestamp, spatial coverage etc.)?</blockquote>
 
 </a>
 
@@ -559,9 +559,10 @@ This FAIR tool...
 <!-- QUESTION Findable 4 -->
 <div class="form-group row">
 <label for="q4" class="col-sm-6 col-form-label">
-<a href="#" data-toggle="modal" data-target="#info_q4">
+<!--<a href="#" data-toggle="modal" data-target="#info_q4">-->
+<a href="#" data-toggle="modal">
 
-&nbsp;Do you have a public metadata catalogue service? [C50]
+<blockquote>Do you have a public metadata catalogue service?</blockquote>
 
 </a>
 
@@ -609,9 +610,10 @@ This FAIR tool...
 <!-- QUESTION Accessible 1 -->
 <div class="form-group row">
 <label for="q5" class="col-sm-6 col-form-label">
-<a href="#" data-toggle="modal" data-target="#info_q5">
+<!--<a href="#" data-toggle="modal" data-target="#info_q5">-->
+<a href="#">
 
-Do you provide access to individual and/or aggregated data (for third party users)? [C58]
+<blockquote>Do you provide access to individual and/or aggregated data (for third party users)?</blockquote>
 
 </a>
 </label>
@@ -632,9 +634,10 @@ Do you provide access to individual and/or aggregated data (for third party user
 <!-- QUESTION Accessible 2 -->
 <div class="form-group row">
 <label for="q6" class="col-sm-6 col-form-label">
-<a href="#" data-toggle="modal" data-target="#info_q6">
+<!--<a href="#" data-toggle="modal" data-target="#info_q6">-->
+<a href="#">
 
-Is it possible to extract the data from the data infrastructure (e.g. download) or do they have to stay in the data infrastructure? [C62]
+<blockquote>Is it possible to extract the data from the data infrastructure (e.g. download) or do they have to stay in the data infrastructure?</blockquote>
 
 </a>
 </label>
@@ -656,9 +659,10 @@ Is it possible to extract the data from the data infrastructure (e.g. download) 
 <!-- QUESTION Accessible 3 -->
 <div class="form-group row">
 <label for="q7" class="col-sm-6 col-form-label">
-<a href="#" data-toggle="modal" data-target="#info_q7">
+<!--<a href="#" data-toggle="modal" data-target="#info_q7">-->
+<a href="#">
 
-Do third party users have to register to the data infrastructure and have an account in order to access the data? [C65]
+<blockquote>Do third party users have to register to the data infrastructure and have an account in order to access the data?</blockquote>
 
 </a>
 </label>
@@ -679,9 +683,10 @@ Do third party users have to register to the data infrastructure and have an acc
 <!-- QUESTION Accessible 4 -->
 <div class="form-group row">
 <label for="q14" class="col-sm-6 col-form-label">
-<a href="#" data-toggle="modal" data-target="#info_q14">
+<!--<a href="#" data-toggle="modal" data-target="#info_q14">-->
+<a href="#">
 
-Are the conditions of access published? [C60]
+<blockquote>Are the conditions of access published?</blockquote>
 
 </a>
 </label>
@@ -724,11 +729,11 @@ Are the conditions of access published? [C60]
 
 <!-- QUESTION Interoperable 1 -->
 <div class="form-group row">
-
 <label for="q8" class="col-sm-6 col-form-label">
-<a href="#reusable_info" data-toggle="modal" data-target="#info_q8">
+<!--<a href="#reusable_info" data-toggle="modal" data-target="#info_q8">-->
+<a href="#">
 
-What is the format(s) for distributing data? [C73] or [C25]
+<blockquote>What is the format(s) for distributing data?</blockquote>
 
 </a>
 </label>
@@ -750,9 +755,10 @@ What is the format(s) for distributing data? [C73] or [C25]
 <!-- QUESTION Interoperable 2 -->
 <div class="form-group row">
 <label for="q9" class="col-sm-6 col-form-label">
-<a href="#" data-toggle="modal" data-target="#info_q9">
+<!--<a href="#" data-toggle="modal" data-target="#info_q9">-->
+<a href="#">
 
-Which community-recognised vocabularies, standards or methodologies are used for metadata and data to facilitate interoperability? [C71]
+<blockquote>Which community-recognised vocabularies, standards or methodologies are used for metadata and data to facilitate interoperability?</blockquote>
 
 </a>
 </label>
@@ -774,9 +780,10 @@ Which community-recognised vocabularies, standards or methodologies are used for
 <!-- QUESTION Interoperable 3 -->
 <div class="form-group row">
 <label for="q10" class="col-sm-6 col-form-label">
-<a href="#" data-toggle="modal" data-target="#info_q10">
+<!--<a href="#" data-toggle="modal" data-target="#info_q10">-->
+<a href="#">
 
-Do you have a metadata record API endpoint (m2m) in place? [C75]
+<blockquote>Do you have a metadata record API endpoint (m2m) in place?</blockquote>
 
 </a>
 </label>
@@ -820,9 +827,10 @@ Do you have a metadata record API endpoint (m2m) in place? [C75]
 <!-- QUESTION Reusable 1 -->
 <div class="form-group row">
 <label for="q11" class="col-sm-6 col-form-label">
-<a href="#" data-toggle="modal" data-target="#info_q11">
+<!--<a href="#" data-toggle="modal" data-target="#info_q11">-->
+<a href="#">
 
-Is there a clear procedure for third party users to request (the license) for data re-use? [C77]
+<blockquote>Is there a clear procedure for third party users to request (the license) for data re-use?</blockquote>
 
 </a>
 </label>
@@ -842,9 +850,10 @@ Is there a clear procedure for third party users to request (the license) for da
 <!-- QUESTION Reusable 2 -->
 <div class="form-group row">
 <label for="q12" class="col-sm-6 col-form-label">
-<a href="#" data-toggle="modal" data-target="#info_q12">
+<!--<a href="#" data-toggle="modal" data-target="#info_q12">-->
+<a href="#">
 
-Have you placed the metadata related to your data infrastructure (that is, the above information provided in this survey) in another available source already? [C46]
+<blockquote>Have you placed the metadata related to your data infrastructure (that is, the above information provided in this survey) in another available source already?</blockquote>
 
 </a>
 </label>
@@ -865,9 +874,10 @@ Have you placed the metadata related to your data infrastructure (that is, the a
 <!-- QUESTION Reusable 3 -->
 <div class="form-group row">
 <label for="q13" class="col-sm-6 col-form-label">
-<a href="#" data-toggle="modal" data-target="#info_q13">
+<!--<a href="#" data-toggle="modal" data-target="#info_q13">-->
+<a href="#">
 
-Is it possible for third party users to access the data and re-use it for more than one purpose/project? [C76]
+<blockquote>Is it possible for third party users to access the data and re-use it for more than one purpose/project?</blockquote>
 
 </a>
 </label>
@@ -909,15 +919,17 @@ Is it possible for third party users to access the data and re-use it for more t
 <br>
 <p>
 
-  <form id="form">
+<form id="form">
 
-<p> Stars <span id="tstars"></span></p>
-<p> FINDABLE score <span id="fscore"></span></p>
-<p> ACCESSIBLE score <span id="ascore"></span></p>
-<p> INTEROPERABLE score <span id="iscore"></span></p>
-<p> REUSABLE score <span id="rscore"></span></p>
+<!--<p> Stars <span id="tstars"></span></p>-->
 <!--<p> FAIRNESS total score <span id="tscore"></span></p>-->
-<p> FAIRNESS score <span id="tpercentage"></span></p>
+<!-- FAIRNESS score <span id="tpercentage"></span> -->
+
+<table width=100%>
+
+<TR><TD>FINDABLE</TD><TD>ACCESSIBLE</TD><TD>INTEROPERABLE</TD><TD>REUSABLE</TD></TR>
+<TR><TD><span id="fscore"></span></TD><TD><span id="ascore"></TD><TD><span id="iscore"></TD><TD><span id="rscore"></span></TD></TR>
+<TR><TD COLSPAN=4><hr/></TD></TR>
 
 
 
@@ -945,13 +957,16 @@ Is it possible for third party users to access the data and re-use it for more t
 <input class="form-control" type="hidden" id="reusable2" name="reusable2" value="" />
 <input class="form-control" type="hidden" id="reusable3" name="reusable3" value="" />
 
-<input type="button" value="Download csv" id="dl" onclick="submitForm();">
+<TR><TD COLSPAN=4 ALIGN=center><input type="button" value="Download csv file" id="dl" onclick="submitForm();"></TD></TR>
+
+<table>
+
 </form>
 
 
 
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='80%'}
 
 
 if (file.exists("./FAIRevaluation.csv")) {
@@ -982,7 +997,7 @@ plot(pie)
 ```
 
 
-```{r, echo=FALSE, fig.width=10}
+```{r, echo=FALSE, out.width='80%'}
 
 
 if (file.exists("./FAIRevaluation.csv")) {
@@ -1010,7 +1025,7 @@ plot(pie)
 
 
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='80%'}
 
 
 if (file.exists("./FAIRevaluation.csv")) {
@@ -1036,7 +1051,7 @@ plot(pie)
 
 ```
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='80%'}
 
 
 if (file.exists("./FAIRevaluation.csv")) {
@@ -1055,7 +1070,7 @@ coord_fixed() +
 xlab("") + 
 ylab("")
 
-pie <- bp + coord_polar("y", start=0,direction=-1) + ggtitle(paste("Reuseable",my_csv2[18], sep=" "))+ scale_fill_manual(values = c("Reuseable"="#e76bf3","Not reuseable"="gray"))
+pie <- bp + coord_polar("y", start=0,direction=-1) + ggtitle(paste("Reuseable",my_csv2[19], sep=" "))+ scale_fill_manual(values = c("Reuseable"="#e76bf3","Not reuseable"="gray"))
 plot(pie)
 
 
@@ -1088,13 +1103,13 @@ Tot_perc<-as.integer(gsub('%', '', my_csv2[20]))
 fair=c(Fin_perc,Acc_perc,Inter_perc,Reus_perc,(100-Tot_perc))
 
 
-df <- data.frame(
-FAIR = c("Findable","Accessible","Interoperable","Reusable","Not FAIR"), value = fair)
+df <- data.frame(FAIR = c("Findable","Accessible","Interoperable","Reusable","Not FAIR"), value = fair)
 
-name1<-paste("Reusable ",my_csv2[19]," (",Reus_perc,"%)",sep="")
-name2<-paste("Interoperable ",my_csv2[18]," (",Inter_perc,"%)",sep="")
-name3<-paste("Accessible ",my_csv2[17]," (",Acc_perc,"%)",sep="")
-name4<-paste("Findable ",my_csv2[16]," (",Fin_perc,"%)",sep="")
+name0<-paste(Tot_perc," %",sep="")
+name1<-paste(my_csv2[19]," (",Reus_perc,"%)",sep="")
+name2<-paste(my_csv2[18]," (",Inter_perc,"%)",sep="")
+name3<-paste(my_csv2[17]," (",Acc_perc,"%)",sep="")
+name4<-paste(my_csv2[16]," (",Fin_perc,"%)",sep="")
 
 bp<- ggplot(df, aes(x="", y=value, fill=FAIR))+
 geom_bar(width = 1, stat = "identity")+
@@ -1104,10 +1119,16 @@ ylab("")
 pie <- bp + coord_polar("y", start=0) + ggtitle(paste("FAIR score ",Tot_perc,"%",sep="")) + scale_fill_manual(values =c("Findable"="#f8766d","Accessible"="#00bf7d","Interoperable"="#00b0f6","Reusable"="#e76bf3","Not FAIR"="gray"))
 plot(pie)
 
+fair_eval=c(name4,name3,name2,name1,name0)
+FAIR_EVALUTATION <- data.frame(FAIRness_Evaluation = c("Findable","Accessible","Interoperable","Reusable","FAIRness score"), value = fair_eval)
+
+FAIR_EVALUTATION
+
 }
 
-```
 
+
+```
 
 
 
@@ -1663,11 +1684,13 @@ clearForm();
 </div>
 
 
+<BR>
 
 # Open-notebook
 Access <A HREF=https://mybinder.org/v2/gh/Marine-Analyst/Jupyter/main?urlpath=rstudio TARGET=_blank>MyBinder.org/HealthyCloud</A> virtual environment.<br>
 More info at <A HREF=http://marine-analyst.eu/dev.py?N=50&O=487 TARGET=_blank>Zenodo.eu</A><br>
 <p xmlns:cc="http://creativecommons.org/ns#" >This document produced by <span property="cc:attributionName">HealthyCloud FAIR notebook</span> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
+<BR><BR>
 
 ```{r, include=FALSE, results='hide'}
 rm(list=ls())
