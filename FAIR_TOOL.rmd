@@ -36,15 +36,15 @@ gc()
 
 ```{r, include=FALSE}
 
-#Check if the 
+# Edit the following line to specify the location and the name of the csv file containing the recorded values of the survey 
 csv_location <- "./FAIRevaluation.csv"
 
-data_collection <- 'Give a title to your data collection FAIR assessment'
+
 
 q1_a <- ''
 q1_b <- ''
-q1_c <- 'selected'
-q1_d <- ''
+q1_c <- ''
+q1_d <- 'selected'
 
 q2_0 <- ''
 q2_a <- ''
@@ -61,20 +61,21 @@ q3_e <- 'selected'
 q4_0 <- ''
 q4_a <- ''
 q4_b <- ''
-q4_c <- 'selected'
-q4_d <- ''
+q4_c <- ''
+q4_d <- 'selected'
 
 q5_a <- ''
 q5_b <- ''
-q5_c <- 'selected'
-q5_d <- ''
+q5_c <- ''
+q5_d <- 'selected'
 
 q6_a <- ''
 q6_b <- ''
 q6_c <- ''
 q6_d <- ''
 q6_e <- ''
-q6_f <- 'selected'
+q6_f <- ''
+q6_g <- 'selected'
 
 q7_a <- ''
 q7_b <- ''
@@ -85,41 +86,41 @@ q8_a <- ''
 q8_b <- ''
 q8_c <- ''
 q8_d <- ''
-q8_e <- 'selected'
-q8_f <- ''
+q8_e <- ''
+q8_f <- 'selected'
 
 q9_a <- ''
 q9_b <- ''
 q9_c <- ''
 q9_d <- ''
-q9_e <- 'selected'
-q9_f <- ''
+q9_e <- ''
+q9_f <- 'selected'
 
 q10_a <- ''
 q10_b <- ''
-q10_c <- 'selected'
-q10_d <- ''
+q10_c <- ''
+q10_d <- 'selected'
 
 q11_a <- ''
 q11_b <- ''
-q11_c <- 'selected'
-q11_d <- ''
+q11_c <- ''
+q11_d <- 'selected'
 
 q12_a <- ''
 q12_b <- ''
-q12_c <- 'selected'
-q12_d <- ''
+q12_c <- ''
+q12_d <- 'selected'
 
 q13_a <- ''
 q13_b <- ''
-q13_c <- 'selected'
-q13_d <- ''
+q13_c <- ''
+q13_d <- 'selected'
 
 q14_a <- ''
 q14_b <- ''
-q14_c <- ''
-q14_d <- 'selected'
+q14_c <- 'selected'
 
+data_collection <- 'Give a title to your data collection FAIR assessment'
 
 ```
 
@@ -169,6 +170,7 @@ q6_c <- ''
 q6_d <- ''
 q6_e <- ''
 q6_f <- ''
+q6_g <- ''
 
 q7_a <- ''
 q7_b <- ''
@@ -212,7 +214,7 @@ q13_d <- ''
 q14_a <- ''
 q14_b <- ''
 q14_c <- ''
-q14_d <- ''
+
 
 
 if (my_csv2[21] == 'q1a') {q1_a <- 'selected'}
@@ -246,6 +248,7 @@ if (my_csv2[26] == 'q6c') {q6_c <- 'selected'}
 if (my_csv2[26] == 'q6d') {q6_d <- 'selected'}
 if (my_csv2[26] == 'q6e') {q6_e <- 'selected'}
 if (my_csv2[26] == 'q6f') {q6_f <- 'selected'}
+if (my_csv2[26] == 'q6g') {q6_g <- 'selected'}
 
 if (my_csv2[27] == 'q7a') {q7_a <- 'selected'}
 if (my_csv2[27] == 'q7b') {q7_b <- 'selected'}
@@ -255,7 +258,6 @@ if (my_csv2[27] == 'q7d') {q7_d <- 'selected'}
 if (my_csv2[28] == 'q14a') {q14_a <- 'selected'}
 if (my_csv2[28] == 'q14b') {q14_b <- 'selected'}
 if (my_csv2[28] == 'q14c') {q14_c <- 'selected'}
-if (my_csv2[28] == 'q14d') {q14_d <- 'selected'}
 
 if (my_csv2[29] == 'q8a') {q8_a <- 'selected'}
 if (my_csv2[29] == 'q8b') {q8_b <- 'selected'}
@@ -517,8 +519,8 @@ return html;
 <select class="form-control" id="q1" name="q1">
 <option id="q1a" value="5" `r toString(q1_a)`>Yes (5)</option>
 <option id="q1b" value="0" `r toString(q1_b)`>No (0)</option>
-<option id="q1d" value="0" `r toString(q1_d)`>This question doesn't apply to this data infrastructure (0)</option>
-<option id="q1c" value="0" `r toString(q1_c)`>I don't know (0)</option>
+<option id="q1c" value="0" `r toString(q1_c)`>This question doesn't apply to this data infrastructure (0)</option>
+<option id="q1d" value="0" `r toString(q1_d)`>I don't know (0)</option>
 
 </select>
 
@@ -560,8 +562,8 @@ return html;
 <div class="col-sm-6">
 
 <select class="form-control" id="q3" name="q3">
-<option id="q3a" value="4" `r toString(q3_a)`>Comprehensively (see suggestion) using a recognised formal machine-readable metadata schema. (4)</option>
-<option id="q3b" value="3" `r toString(q3_b)`>Comprehensively, but in a text-based, non-standard format. (3)</option>
+<option id="q3a" value="4" `r toString(q3_a)`>Comprehensively (see suggestion) using a recognised formal machine-readable metadata schema (4)</option>
+<option id="q3b" value="3" `r toString(q3_b)`>Comprehensively, but in a text-based, non-standard format (3)</option>
 <option id="q3c" value="2" `r toString(q3_c)`>Brief title and description (2)</option>
 <option id="q3d" value="0" `r toString(q3_d)`>The data is not described (0)</option>
 <option id="q3e" value="0" `r toString(q3_e)`>I don't know (0)</option>
@@ -586,8 +588,8 @@ return html;
 <select class="form-control" id="q4" name="q4">
 <option id="q4a" value="4" `r toString(q4_a)`>Yes (4)</option>
 <option id="q4b" value="0" `r toString(q4_b)`>No (0)</option>
-<option id="q4d" value="0" `r toString(q4_d)`>This question doesn't apply to this data infrastructure (0)</option>
-<option id="q4c" value="0" `r toString(q4_c)`>I don't know (0)</option>
+<option id="q4c" value="0" `r toString(q4_c)`>This question doesn't apply to this data infrastructure (0)</option>
+<option id="q4d" value="0" `r toString(q4_d)`>I don't know (0)</option>
 
 </select>
 
@@ -631,10 +633,10 @@ return html;
 <div class="col-sm-6">
 
 <select class="form-control" id="q5" name="q5">
-<option id="q5a" value="4"`r toString(q5_a)`>Publicly accessible individual and aggregated (4)</option>
+<option id="q5a" value="4" `r toString(q5_a)`>Provides access to individual or aggregated data (4)</option>
 <option id="q5b" value="3" `r toString(q5_b)`>Publicly accessible aggregated (3)</option>
-<option id="q5d" value="0" `r toString(q5_d)`>This doesn't apply to this data infrastructure (0)</option>
-<option id="q5c" value="0" `r toString(q5_c)`>I don't know (0)</option>
+<option id="q5c" value="0" `r toString(q5_c)`>This doesn't apply to this data infrastructure (0)</option>
+<option id="q5d" value="0" `r toString(q5_d)`>I don't know (0)</option>
 
 </select>
 
@@ -653,12 +655,13 @@ return html;
 <div class="col-sm-6">
 
 <select class="form-control" id="q6" name="q6">
-<option id="q6a" value="4" `r toString(q6_a)`>Standard web service API (e.g. OGC) (4)</option>
-<option id="q6b" value="3" `r toString(q6_b)`>Non-standard web service (e.g. OpenAPI/Swagger/informal API) (3)</option>
-<option id="q6c" value="2" `r toString(q6_c)`>File download from online location (2)</option>
-<option id="q6d" value="1" `r toString(q6_d)`>By individual arrangement (1)</option>
-<option id="q6e" value="0" `r toString(q6_e)`>No access to data (0)</option>
-<option id="q6f" value="0" `r toString(q6_f)`>I don't know (0)</option>
+<option id="q6a" value="4" `r toString(q6_a)`>It is possible to access data for analysis in a remote secure processing environment (4)</option>
+<option id="q6b" value="4" `r toString(q6_b)`>Standard web service API (e.g. OGC) (4)</option>
+<option id="q6c" value="3" `r toString(q6_c)`>Non-standard web service (e.g. OpenAPI/Swagger/informal API) (3)</option>
+<option id="q6d" value="2" `r toString(q6_d)`>File download from online location (2)</option>
+<option id="q6e" value="1" `r toString(q6_e)`>By individual arrangement (1)</option>
+<option id="q6f" value="0" `r toString(q6_f)`>It is not possible to extract the data (0)</option>
+<option id="q6g" value="0" `r toString(q6_g)`>I don't know (0)</option>
 
 </select>
 </div>
@@ -678,7 +681,7 @@ return html;
 <select class="form-control" id="q7" name="q7">
 <option id="q7a" value="1" `r toString(q7_a)`>Yes (1)</option>
 <option id="q7b" value="0" `r toString(q7_b)`>No (0)</option>
-<option id="q7c" value="0" `r toString(q7_c)`>No access to data (0)</option>
+<option id="q7c" value="0" `r toString(q7_c)`>This doesn’t apply to this data infrastructure (0)</option>
 <option id="q7d" value="0" `r toString(q7_d)`>I don't know (0)</option>
 </select>
 
@@ -700,8 +703,7 @@ return html;
 
 <option id="q14a" value="1" `r toString(q14_a)`>Yes (1)</option>
 <option id="q14b" value="0" `r toString(q14_b)`>No (0)</option>
-<option id="q14c" value="0" `r toString(q14_c)`>No access to data (0)</option>
-<option id="q14d" value="0" `r toString(q14_d)`>I don't know (0)</option>
+<option id="q14c" value="0" `r toString(q14_c)`>I don't know (0)</option>
 
 </select>
 </div>
@@ -743,12 +745,12 @@ return html;
 <div class="col-sm-6">
 <select class="form-control" id="q8" name="q8">
 
-<option id="q8a" value="4" `r toString(q8_a)`>In a structured, open standard, machine-readable format (csv, xml, json, R, ...)(4) </option>
-<option id="q8b" value="2" `r toString(q8_b)`>In a structured, open standard, non-machine-readable format (2) (pdf)</option>
+<option id="q8a" value="4" `r toString(q8_a)`>In a structured, open standard, machine-readable format (csv, xml, json, R, ...) (4)</option>
+<option id="q8b" value="2" `r toString(q8_b)`>In a structured, open standard, non-machine-readable format (pdf) (2)</option>
 <option id="q8c" value="0" `r toString(q8_c)`>Mostly in a proprietary format (SAS) (0)</option>
 <option id="q8d" value="0" `r toString(q8_d)`>Other (0)</option>
-<option id="q8f" value="0" `r toString(q8_f)`>This doesn't apply to this data infrastructure (0)</option>
-<option id="q8e" value="0" `r toString(q8_e)`>I don't know (0)</option>
+<option id="q8e" value="0" `r toString(q8_e)`>This doesn't apply to this data infrastructure (0)</option>
+<option id="q8f" value="0" `r toString(q8_f)`>I don't know (0)</option>
 
 </select>
 </div>
@@ -770,8 +772,8 @@ return html;
 <option id="q9b" value="1" `r toString(q9_b)`>Standardised vocabularies/ontologies/schema without global identifiers (HL7, FHIR, SNOMED CT, LOINC, ICD-10,...) (1)</option>
 <option id="q9c" value="1" `r toString(q9_c)`>Other (1)</option>
 <option id="q9d" value="0" `r toString(q9_d)`>Data elements not described (0)</option>
-<option id="q9e" value="0" `r toString(q9_e)`>I don't know (0)</option>
-<option id="q9f" value="0" `r toString(q9_f)`>This doesn't apply to this data infrastructure (0)</option>
+<option id="q9e" value="0" `r toString(q9_e)`>This doesn't apply to this data infrastructure (0)</option>
+<option id="q9f" value="0" `r toString(q9_f)`>I don't know (0)</option>
 
 </select>
 </div>
@@ -791,8 +793,8 @@ return html;
 
 <option id="q10a" value="2" `r toString(q10_a)`>Yes (2)</option>
 <option id="q10b" value="0" `r toString(q10_b)`>No (0)</option>
-<option id="q10d" value="0" `r toString(q10_d)`>This question doesn't apply to this data infrastructure (0)</option>
-<option id="q10c" value="0" `r toString(q10_c)`>I don't know (0)</option>
+<option id="q10c" value="0" `r toString(q10_c)`>This question doesn't apply to this data infrastructure (0)</option>
+<option id="q10d" value="0" `r toString(q10_d)`>I don't know (0)</option>
 
 </select>
 </div>
@@ -836,8 +838,8 @@ return html;
 
 <option id="q11a" value="3" `r toString(q11_a)`>Yes (3)</option>
 <option id="q11b" value="0" `r toString(q11_b)`>No(0)</option>
-<option id="q11e" value="0" `r toString(q11_d)`>This question doesn't apply to this data infrastructure (0)</option>
-<option id="q11c" value="0" `r toString(q11_c)`>I don't know (0)</option>
+<option id="q11c" value="0" `r toString(q11_c)`>This question doesn't apply to this data infrastructure (0)</option>
+<option id="q11d" value="0" `r toString(q11_d)`>I don't know (0)</option>
 
 </select>
 </div>
@@ -857,8 +859,8 @@ return html;
 
 <option id="q12a" value="2" `r toString(q12_a)`>Yes (2)</option>
 <option id="q12b" value="0" `r toString(q12_b)`>No (0)</option>
-<option id="q12d" value="0" `r toString(q12_d)`>This question doesn't apply to this data infrastructure (0)</option>
-<option id="q12c" value="0" `r toString(q12_c)`>I don't know (0)</option>
+<option id="q12c" value="0" `r toString(q12_c)`>This question doesn't apply to this data infrastructure (0)</option>
+<option id="q12d" value="0" `r toString(q12_d)`>I don't know (0)</option>
 
 </select>
 </div>
@@ -879,8 +881,8 @@ return html;
 
 <option id="q13a" value="2" `r toString(q13_a)`>Yes (2)</option>
 <option id="q13b" value="0" `r toString(q13_b)`>No (0)</option>
-<option id="q13d" value="0" `r toString(q13_d)`>This question doesn't apply to this data infrastructure (0)</option>
-<option id="q13c" value="0" `r toString(q13_c)`>I don't know (0)</option>
+<option id="q13c" value="0" `r toString(q13_c)`>This question doesn't apply to this data infrastructure (0)</option>
+<option id="q13d" value="0" `r toString(q13_d)`>I don't know (0)</option>
 
 </select>
 </div>
@@ -946,6 +948,7 @@ return html;
 <input class="form-control" type="hidden" id="reusable1" name="reusable1" value="" />
 <input class="form-control" type="hidden" id="reusable2" name="reusable2" value="" />
 <input class="form-control" type="hidden" id="reusable3" name="reusable3" value="" />
+
 
 <TR><TD COLSPAN=4 ALIGN=center><input type="button" value="Download csv file" id="dl" onclick="submitForm();"></TD></TR>
 
@@ -1182,7 +1185,7 @@ var formData = $("form").serializeArray();
 let csv = "data:text/csv;charset=utf-8,"; // accept data as CSV
 
 formData.forEach(function(item) {
-csv += item.value + ";"; // concat form value on csv var and add ; to create columns (you can change to , if want)
+csv += item.value + ";"; // form value on csv var and add ; to create columns (you can change to , if want)
 });
 
 var encodedUri = encodeURI(csv);
