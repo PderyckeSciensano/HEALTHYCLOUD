@@ -508,7 +508,7 @@ return html;
 <label for="q1" class="col-sm-6 col-form-label">
 <a href="#" data-toggle="modal" data-target="#info_q1"></a>
 
-<blockquote>Do you have a unique identifier for your datasets?</blockquote>
+<blockquote>Do you have a unique identifier for your datasets? (e.g. DOI or PubMed ID)</blockquote>
 
 
 
@@ -533,7 +533,7 @@ return html;
 <label for="q2" class="col-sm-6 col-form-label">
 <a href="#" data-toggle="modal" data-target="#info_q2"></a>
 
-<blockquote>Do you have a unique identifier for the metadata?</blockquote>
+<blockquote>Do you have a unique identifier for the metadata? (e.g. UUID)</blockquote>
 
 
 </label>
@@ -554,7 +554,7 @@ return html;
 <label for="q3" class="col-sm-6 col-form-label">
 <a href="#" data-toggle="modal" data-target="#info_q3"></a>
 
-<blockquote>Do you produce or collect metadata for all your data (e.g. handbook, guide for users, description, keywords, timestamp, spatial coverage etc.)?</blockquote>
+<blockquote>Do you produce or collect metadata for your data (e.g. handbook, guide for users, description, keywords, timestamp, spatial coverage etc.)?</blockquote>
 
 
 </label>
@@ -633,8 +633,8 @@ return html;
 <div class="col-sm-6">
 
 <select class="form-control" id="q5" name="q5">
-<option id="q5a" value="4" `r toString(q5_a)`>Provides access to individual or aggregated data (4)</option>
-<option id="q5b" value="3" `r toString(q5_b)`>Publicly accessible aggregated (3)</option>
+<option id="q5a" value="4" `r toString(q5_a)`>Provides access to individual and aggregated data (4)</option>
+<option id="q5b" value="3" `r toString(q5_b)`>Publicly accessible aggregated data (3)</option>
 <option id="q5c" value="0" `r toString(q5_c)`>This doesn't apply to this data infrastructure (0)</option>
 <option id="q5d" value="0" `r toString(q5_d)`>I don't know (0)</option>
 
@@ -745,9 +745,9 @@ return html;
 <div class="col-sm-6">
 <select class="form-control" id="q8" name="q8">
 
-<option id="q8a" value="4" `r toString(q8_a)`>In a structured, open standard, machine-readable format (csv, xml, json, R, ...) (4)</option>
-<option id="q8b" value="2" `r toString(q8_b)`>In a structured, open standard, non-machine-readable format (pdf) (2)</option>
-<option id="q8c" value="0" `r toString(q8_c)`>Mostly in a proprietary format (SAS) (0)</option>
+<option id="q8a" value="4" `r toString(q8_a)`>In a structured, open standard, machine-readable format (e.g. csv, xml, json, R, ...) (4)</option>
+<option id="q8b" value="2" `r toString(q8_b)`>In a structured, open standard, non-machine-readable format (e.g. pdf) (2)</option>
+<option id="q8c" value="0" `r toString(q8_c)`>Mostly in a proprietary format (e.g. SAS) (0)</option>
 <option id="q8d" value="0" `r toString(q8_d)`>Other (0)</option>
 <option id="q8e" value="0" `r toString(q8_e)`>This doesn't apply to this data infrastructure (0)</option>
 <option id="q8f" value="0" `r toString(q8_f)`>I don't know (0)</option>
@@ -768,8 +768,8 @@ return html;
 <div class="col-sm-6">
 <select class="form-control" id="q9" name="q9">
 
-<option id="q9a" value="2" `r toString(q9_a)`>Standardised open and universal using resolvable global identifiers linking to explanations  (OPen ex: ...) (2)</option>
-<option id="q9b" value="1" `r toString(q9_b)`>Standardised vocabularies/ontologies/schema without global identifiers (HL7, FHIR, SNOMED CT, LOINC, ICD-10,...) (1)</option>
+<option id="q9a" value="2" `r toString(q9_a)`>Standardised open and universal schemas using resolvable global identifiers linking to explanations  (e.g. DataCite Metadata Schema, PROV, Dublin Core,...) (2)</option>
+<option id="q9b" value="1" `r toString(q9_b)`>Standardised vocabularies/ontologies/schema without global identifiers (Domain-specific standards, e.g. HL7, FHIR, SNOMED CT, LOINC, ICD-10,...) (1)</option>
 <option id="q9c" value="1" `r toString(q9_c)`>Other (1)</option>
 <option id="q9d" value="0" `r toString(q9_d)`>Data elements not described (0)</option>
 <option id="q9e" value="0" `r toString(q9_e)`>This doesn't apply to this data infrastructure (0)</option>
@@ -850,7 +850,7 @@ return html;
 <label for="q12" class="col-sm-6 col-form-label">
 <a href="#" data-toggle="modal" data-target="#info_q12"></a>
 
-<blockquote>Have you placed the metadata related to your data infrastructure (that is, the above information provided in this survey) in another available source already?</blockquote>
+<blockquote>Have you placed in an open access repository this information about your data collections?</blockquote>
 
 </label>
 
